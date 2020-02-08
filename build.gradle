@@ -4,6 +4,8 @@ plugins {
 	id 'application'
 }
 
+mainClassName = 'com.test.hello.DockerTestApplication'
+
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.test.hello'
