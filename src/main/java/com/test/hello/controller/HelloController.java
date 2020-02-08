@@ -14,7 +14,7 @@ public class HelloController{
 
     @GetMapping("/hello")
     public String hello()  {
-        return "hello! docker test"; 
+        return "hello! docker test - update test";
     }
  
 }
