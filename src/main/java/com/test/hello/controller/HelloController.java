@@ -13,7 +13,7 @@ public class HelloController{
     }
 
     @GetMapping("/hello")
-    public String createApp()  {
+    public String hello()  {
         return "hello! docker test"; 
     }
  
