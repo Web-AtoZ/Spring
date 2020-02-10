@@ -9,7 +9,7 @@ public class HelloController{
 
     @GetMapping("/")
     public String createApp()  {
-        return "성공했습니다. docker test";
+        return "docker test !!!!";
     }
 
     @GetMapping("/hello")
