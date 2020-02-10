@@ -1,5 +1,5 @@
 # openjdk 8
-FROM openjdk:8-jdk-alpine
+FROM java:8
 # image maintainer
 LABEL maintainer="f.leeap1004@gmail.comSS"
 
