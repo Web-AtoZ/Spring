@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8020
   address: 0.0.0.0
 
 spring:
@@ -16,3 +16,7 @@ endpoints:
     enabled: true
   shutdown:
     enabled: true
+
+# logging 파일 위치, 환경에 따라 달라질 예정.
+logging:
+  file: "./log/local"  # logback-spring에서 ${LOG_FILE} 에 해당하는 값
