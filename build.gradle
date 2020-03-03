@@ -33,8 +33,6 @@ dependencies {
 	compile 'com.google.googlejavaformat:google-java-format:1.7'
 	compile 'org.springframework.boot:spring-boot-starter-web'
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
-	compile("org.springframework.boot:spring-boot-starter-web")
-	testCompile("org.springframework.boot:spring-boot-starter-test")
 
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.12
 	compileOnly 'org.projectlombok:lombok:1.18.12'
