@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: dockerTestApp
+  datasource:
+    url: jdbc:postgresql://35.190.236.211:5432/webatoz
+    username: admin
+    password: cafe24@001
+    driver-class-name: org.postgresql.Driver
 
 ribbon:
   ServerListRefreshInterval: 1000
