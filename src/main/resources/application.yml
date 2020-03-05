@@ -1,10 +1,11 @@
 server:
   port: 80
-  address: 0.0.0.0
 
 spring:
   application:
-    name: dockerTestApp
+
+    name: webatoz-backend
+
 # naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
   jackson:
     property-naming-strategy: SNAKE_CASE
