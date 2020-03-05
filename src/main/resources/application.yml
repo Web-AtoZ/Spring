@@ -3,23 +3,10 @@ server:
 
 spring:
   application:
-
     name: webatoz-backend
-
-# naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
   jackson:
+    # naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
     property-naming-strategy: SNAKE_CASE
-
-ribbon:
-  ServerListRefreshInterval: 1000
-
-endpoints:
-  health:
-    sensitive: false
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
 
 # logging 파일 위치, 환경에 따라 달라질 예정.
 logging:
