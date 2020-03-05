@@ -5,6 +5,9 @@ server:
 spring:
   application:
     name: dockerTestApp
+# naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
+  jackson:
+    property-naming-strategy: SNAKE_CASE
 
 ribbon:
   ServerListRefreshInterval: 1000
