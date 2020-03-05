@@ -10,9 +10,4 @@ public class HelloController {
   public String createApp() {
     return "docker test !!!!";
   }
-
-  @GetMapping("/hello")
-  public String hello() {
-    return "hello! docker test - update test";
-  }
 }

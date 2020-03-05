@@ -8,7 +8,7 @@ LABEL maintainer="f.leeap1004@gmail.comSS"
 VOLUME /tmp
 
 # Make port 8080 available to the world outside this container
-# EXPOSE 8080
+#EXPOSE 8080
 
 # The application's jar file
 ARG JAR_FILE=Spring/build/libs/springboot-docker-test-0.0.1-SNAPSHOT.jar
