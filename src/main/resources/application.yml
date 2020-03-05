@@ -1,18 +1,13 @@
 server:
   port: 80
-  address: 0.0.0.0
 
 spring:
   application:
-    name: dockerTestApp
+    name: webatoz-backend
+  jackson:
+    # naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
+    property-naming-strategy: SNAKE_CASE
 
-ribbon:
-  ServerListRefreshInterval: 1000
-
-endpoints:
-  health:
-    sensitive: false
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
+# logging 파일 위치, 환경에 따라 달라질 예정.
+logging:
+  file: "./log/local"  # logback-spring에서 ${LOG_FILE} 에 해당하는 값
