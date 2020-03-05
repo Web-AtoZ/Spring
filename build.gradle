@@ -1,7 +1,7 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.3.RELEASE'
-	id 'java'
-	id 'application'
+    id 'org.springframework.boot' version '2.1.3.RELEASE'
+    id 'java'
+    id 'application'
 }
 
 
@@ -10,16 +10,16 @@ mainClassName = 'com.test.hello.DockerTestApplication'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.test.hello'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 jar {
-	baseName = 'docker-test'
-	version = '0.1.0'
+    baseName = 'docker-test'
+    version = '0.1.0'
 }
 
 sourceCompatibility = 1.8
@@ -50,5 +50,4 @@ dependencies {
 
 	// health check
 	compile('org.springframework.boot:spring-boot-starter-actuator')
-
 }
