@@ -9,7 +9,6 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import javax.sql.DataSource;
-import java.io.IOException;
 
 public abstract class DatabaseConfig extends HikariConfig {
     public static final String BASE_MAPPER_PACKAGE_PREFIX = "com.test.hello.database";
@@ -27,9 +26,8 @@ public abstract class DatabaseConfig extends HikariConfig {
         factory.afterPropertiesSet();
     }
 
-    protected void setConfigureSqlSessionFactory(SqlSessionFactoryBean sessionFactoryBean, DataSource dataSource) throws IOException {
+    protected void setConfigureSqlSessionFactory(SqlSessionFactoryBean sessionFactoryBean, DataSource dataSource) {
         sessionFactoryBean.setDataSource(dataSource);
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:mybatis/mapper/**/*.xml"));
     }
 }

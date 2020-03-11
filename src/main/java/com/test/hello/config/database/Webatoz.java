@@ -60,7 +60,7 @@ public class Webatoz extends DatabaseConfig{
         factory.setDataSource(dataSource);
         factory.setPackagesToScan(packageToScan);
         factory.setPersistenceUnitName(name);
-        setConfigureEntityManagerFactory(factory);
+        super.setConfigureEntityManagerFactory(factory);
 
         return factory.getObject();
     }
