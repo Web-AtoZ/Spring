@@ -1,6 +1,15 @@
 server:
   port: 8080
 
+jasypt:
+  encryptor:
+    property:
+      prefix: ENC(
+      suffix: )
+    poolSize: 1
+    algorithm: PBEWithMD5AndDES
+    password: test
+
 spring:
   application:
     name: webatoz-backend
@@ -10,14 +19,15 @@ spring:
 
   datasource:
     webatoz:
-      jdbc-url: jdbc:postgresql://35.190.236.211:5432/webatoz
-      username: admin
-      password: cafe24@001
+      jdbc-url: ENC(1mKpq/Fdu4f4Ev+zzKqLTyFXVRjoGKHDNtXbSo9WbV9lWPXEXa/dSMIU2yqb5/wS6mtMcAq/LSU=)
+      username: ENC(QhGG95WgKzog+cLbnayAUQ==)
+      password: ENC(vtyNbV0TjzufdvH/MQf8WZRR9ASwD/GX)
       driver-class-name: org.postgresql.Driver
-
-
 
 
 # logging 파일 위치, 환경에 따라 달라질 예정.
 logging:
   file: "./log/local"  # logback-spring에서 ${LOG_FILE} 에 해당하는 값
+
+
+
