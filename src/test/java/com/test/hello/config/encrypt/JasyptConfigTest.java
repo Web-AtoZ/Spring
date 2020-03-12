@@ -14,11 +14,11 @@ public class JasyptConfigTest {
     public void test() {
         StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
-        pbeEnc.setPassword("test");
+        pbeEnc.setPassword("abc"); // 변경 필요
 
-        String url = "jdbc:postgresql://35.190.236.211:5432/webatoz";
-        String username = "admin";
-        String password = "cafe24@001";
+        String url = "";
+        String username = "";
+        String password = "";
 
         System.out.println("기존 URL :: " + url + " | 변경 URL :: " + pbeEnc.encrypt(url));
         System.out.println("기존 username :: " + username + " | 변경 username :: " + pbeEnc.encrypt(username));
