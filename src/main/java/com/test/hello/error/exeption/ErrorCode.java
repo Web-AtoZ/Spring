@@ -1,6 +1,7 @@
 package com.test.hello.error.exeption;
 
 public enum ErrorCode {
+    SUCCESS(200, "S001", "Success"),
     // Common
     INTERNAL_SERVER_ERROR(500, "C001", "Server Error"),
     INVALID_TYPE_VALUE(400, "C002", "Invalid Type Value"),
