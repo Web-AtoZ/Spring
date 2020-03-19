@@ -4,7 +4,8 @@ public enum ErrorCode {
     // Common
     INTERNAL_SERVER_ERROR(500, "C001", "Server Error"),
     INVALID_TYPE_VALUE(400, "C002", "Invalid Type Value"),
-    NOT_FOUND(404, "C003", "Not Found");
+    NOT_FOUND(404, "C003", "Not Found"),
+    INVALID_INPUT_VALUE(400, "C004", "Invalid Input Value");
 
     private final String code;
     private final String message;
