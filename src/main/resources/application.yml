@@ -36,7 +36,7 @@ zuul:
   routes:
     webatoz-backend:
       path: /replies/**
-      url: http://localhost:8088/comments
+      url: http://localhost:8080/comments
 
 
 

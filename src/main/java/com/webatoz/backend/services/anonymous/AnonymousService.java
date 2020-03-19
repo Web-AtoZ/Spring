@@ -17,21 +17,24 @@ public class AnonymousService {
 
     private final AnonymousRepository anonymousRepository;
 
-    public Anonymous getName(){
-        return anonymousRepository.findById("잘생긴도마뱀").get();
-    }
-
     public List<Anonymous> findAnonymousByName(String name){
-        return anonymousRepository.findAnonymousByName(name);
+//        anonymousRepository.findAnonymousByName(name);
+        return anonymousRepository.findAll();
+
     }
 
     @Transactional
     public void updateName(Anonymous a) {
-        anonymousRepository.updateName(a.getName(),a.getAnonymous_id());
+//        anonymousRepository.updateName(a.getName(), a.getAnonymousId());
+        Anonymous anonymous = anonymousRepository.findById(1L).get();
+        anonymous.setName("아우");
+
+        anonymousRepository.save(anonymous);
     }
 
     @Transactional
     public void deleteId(Anonymous a) {
-        anonymousRepository.deleteId(a.getAnonymous_id());
+        Anonymous anonymous = anonymousRepository.findById(1L).get();
+        anonymousRepository.delete(anonymous);
     }
 }
