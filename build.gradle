@@ -6,11 +6,11 @@ plugins {
 }
 
 
-mainClassName = "com.test.hello.DockerTestApplication"
+mainClassName = "com.webatoz.backend.WebatozApplication"
 
 apply plugin: "io.spring.dependency-management"
 
-group = "com.test.hello"
+group = "com.webatoz.backend"
 version = "0.0.1"
 sourceCompatibility = "1.8"
 
@@ -19,7 +19,7 @@ repositories {
 }
 
 jar {
-    baseName = "docker-test"
+    baseName = "webatoz"
     version = "0.1.0"
 }
 
