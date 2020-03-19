@@ -6,6 +6,9 @@ import com.test.hello.database.webatoz.anonymous.AnonymousRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class AnonymousService {
@@ -18,7 +21,17 @@ public class AnonymousService {
         return anonymousRepository.findById("잘생긴도마뱀").get();
     }
 
-    public String getName2(){
-        return anonymousMapper.find(1).getName();
+    public List<Anonymous> findAnonymousByName(String name){
+        return anonymousRepository.findAnonymousByName(name);
+    }
+
+    @Transactional
+    public void updateName(Anonymous a) {
+        anonymousRepository.updateName(a.getName(),a.getAnonymous_id());
+    }
+
+    @Transactional
+    public void deleteId(Anonymous a) {
+        anonymousRepository.deleteId(a.getAnonymous_id());
     }
 }

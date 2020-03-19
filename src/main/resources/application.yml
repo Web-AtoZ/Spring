@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -14,9 +14,6 @@ spring:
       username: admin
       password: cafe24@001
       driver-class-name: org.postgresql.Driver
-
-
-
 
 # logging 파일 위치, 환경에 따라 달라질 예정.
 logging:
