@@ -24,10 +24,20 @@ spring:
       password: ENC(vtyNbV0TjzufdvH/MQf8WZRR9ASwD/GX)
       driver-class-name: org.postgresql.Driver
 
-
 # logging 파일 위치, 환경에 따라 달라질 예정.
 logging:
   file: "./log/local"  # logback-spring에서 ${LOG_FILE} 에 해당하는 값
+
+#Zuul routes. "/boards/*/comments/*" 이 경로로 유입되는 것은 "/comments/*"로 연결한다.]
+# *  : 0개또는 그이상의 글자
+# ** : 0개또는 그이상의 디렉토리 경로
+
+zuul:
+  routes:
+    webatoz-backend:
+      path: /replies/**
+      url: http://localhost:8088/comments
+
 
 
 
