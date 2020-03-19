@@ -8,7 +8,7 @@ jasypt:
       suffix: )
     poolSize: 1
     algorithm: PBEWithMD5AndDES
-    password: ${dbkey}
+    password: ${dbkey} # key 별도 안내 예정
 
 spring:
   application:
