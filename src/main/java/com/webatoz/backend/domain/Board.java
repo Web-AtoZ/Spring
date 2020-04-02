@@ -4,11 +4,14 @@ public class Board {
   private final Long boardId;
   private final String title;
   private final String content;
+  private final Long view;
+  private User user;
 
-  public Board(Long boardId, String title, String content) {
+  public Board(Long boardId, String title, String content, Long view) {
     this.boardId = boardId;
     this.title = title;
     this.content = content;
+    this.view = view;
   }
 
   public Long getBoardId() {
@@ -23,9 +26,17 @@ public class Board {
     return content;
   }
 
-  //    private final Long id;
-  //    private final String title;
-  //
+  public Long getView() {
+    return view;
+  }
+  public User getUser() {
+    return user;
+  }
+
+  public void addUser(User user) {
+    this.user = user;
+  }
+
   //  private final int views
   //  private Date created_date
   //  private Date updated_date
