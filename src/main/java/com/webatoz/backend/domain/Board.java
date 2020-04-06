@@ -1,17 +1,24 @@
 package com.webatoz.backend.domain;
 
+import java.time.LocalDateTime;
+
 public class Board {
   private final Long boardId;
   private final String title;
   private final String content;
   private final Long view;
   private User user;
+  private int optionId;
+  private LocalDateTime createdDate;
+  private LocalDateTime updatedDate;
+  private LocalDateTime deletedDate;
 
   public Board(Long boardId, String title, String content, Long view) {
     this.boardId = boardId;
     this.title = title;
     this.content = content;
     this.view = view;
+    this.createdDate = LocalDateTime.now();
   }
 
   public Long getBoardId() {
@@ -32,19 +39,22 @@ public class Board {
   public User getUser() {
     return user;
   }
+  public int getOptionId() {
+    return optionId;
+  }
+  public LocalDateTime getCreatedDate() {
+    return createdDate;
+  }
+
+  public LocalDateTime getUpdatedDate() {
+    return updatedDate;
+  }
+
+  public LocalDateTime getDeletedDate() {
+    return deletedDate;
+  }
 
   public void addUser(User user) {
     this.user = user;
   }
-
-  //  private final int views
-  //  private Date created_date
-  //  private Date updated_date
-  // private Date deleted_date
-  // private final int user_id
-  // private ifnal int option_id
-  //    public Board (Long id, String title) {
-  //        this.id = id;
-  //        this.title = title;
-  //    }
 }
