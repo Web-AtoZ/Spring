@@ -1,8 +1,17 @@
 package com.webatoz.backend.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class User {
-    private final Long userId;
-    private final String name;
+    @Id
+    @GeneratedValue
+    private Long userId;
+    private String name;
+
+    private Long boardId;
 
     public User(Long userId, String name) {
         this.userId = userId;

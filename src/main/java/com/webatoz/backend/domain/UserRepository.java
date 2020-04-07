@@ -1,5 +1,7 @@
 package com.webatoz.backend.domain;
 
-public interface UserRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository<User, Long> {
     User findUserByBoard(Long boardId);
 }
