@@ -7,20 +7,19 @@ import com.webatoz.backend.domain.UserRepository;
 import java.util.List;
 import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class BoardService {
-  BoardRepository boardRepository;
+  private final BoardRepository boardRepository;
 
-  UserRepository userRepository;
-
-  public BoardService(BoardRepository boardRepository, UserRepository userRepository) {
-    this.boardRepository = boardRepository;
-    this.userRepository = userRepository;
-  }
+//  UserRepository userRepository;
+//
+//  public BoardService(BoardRepository boardRepository, UserRepository userRepository) {
+//    this.boardRepository = boardRepository;
+//    this.userRepository = userRepository;
+//  }
 
   public List<Board> getBoards() {
     List<Board> boards = boardRepository.findAll();
@@ -28,11 +27,11 @@ public class BoardService {
     return boards;
   }
 
-  public Board getBoard(Long boardId) {
+  public Board getBoard(int boardId) {
     Board board = boardRepository.findById(boardId).orElse(null);
 
-    User user = userRepository.findUserByBoard(boardId);
-    board.addUser(user);
+    //User user = userRepository.findUserByBoard(boardId);
+    //board.addUser(user);
     return board;
   }
 
@@ -41,7 +40,7 @@ public class BoardService {
   }
 
   @Transactional
-  public Board updateBoard(long boardId, String title, String content) {
+  public Board updateBoard(int boardId, String title, String content) {
 
     Board board = boardRepository.findById(boardId).orElse(null);
 

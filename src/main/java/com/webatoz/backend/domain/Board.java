@@ -3,56 +3,50 @@ package com.webatoz.backend.domain;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Transient;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
 
 @Entity
 @Getter
+@Builder
 @NoArgsConstructor
 public class Board {
 
   @Id
-  @GeneratedValue
-  private Long boardId;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Setter
+  private int boardId;
   private String title;
   private String content;
-  private Long view;
+  private int views;
 
   private Long userId;
-  @Transient
-  private User user;
+//  @Transient
+//  private User user;
   private Long optionId;
   private LocalDateTime createdDate;
   private LocalDateTime updatedDate;
   private LocalDateTime deletedDate;
 
-  public Board(String title, String content, long view) {
+  public Board(String title, String content, int views) {
     this.title = title;
     this.content = content;
-    this.view = view;
+    this.views = views;
   }
-  public Board(Long boardId, String title, String content) {
+  public Board(int boardId, String title, String content) {
     this.boardId = boardId;
     this.title = title;
     this.content = content;
   }
 
-  public Board(Long boardId, String title, String content, Long view) {
+  public Board(int boardId, String title, String content, int views) {
     this.boardId = boardId;
     this.title = title;
     this.content = content;
-    this.view = view;
+    this.views = views;
     this.createdDate = LocalDateTime.now();
-  }
-
-  public void addUser(User user) {
-    this.user = user;
-  }
-
-  public void setBoardId(long boardId) {
-    this.boardId = boardId;
   }
 
   public void updateInformation(String title, String content) {

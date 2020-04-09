@@ -5,6 +5,8 @@ import com.webatoz.backend.domain.Board;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,9 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RestController
 @RequestMapping(value = "/boards")
+@RequiredArgsConstructor
 public class BoardController {
 
-  @Autowired private BoardService boardService;
+  private final BoardService boardService;
 
   @GetMapping
   public List<Board> list() {
@@ -31,18 +34,19 @@ public class BoardController {
   }
 
   @GetMapping("/{id}")
-  public Board detail(@PathVariable("id") Long boardId) throws Exception {
+  public Board detail(@PathVariable("id") int boardId) throws Exception {
     Board board = boardService.getBoard(boardId);
     return board;
   }
 
   @PostMapping
   public ResponseEntity<?> create(@RequestBody Board resource) throws URISyntaxException {
-    String title = resource.getTitle();
-    String content = resource.getContent();
-    long view = resource.getView();
+    Board board = Board.builder()
+            .title(resource.getTitle())
+            .content(resource.getContent())
+            .views(0)
+            .build();
 
-    Board board = new Board(title, content, view);
     boardService.addBoard(board);
 
     URI location = new URI("/boards/"+ board.getBoardId());
@@ -50,7 +54,7 @@ public class BoardController {
   }
 
   @PatchMapping("/{id}")
-  public String update(@PathVariable("id") Long id, @RequestBody Board resource) {
+  public String update(@PathVariable("id") int id, @RequestBody Board resource) {
     String title = resource.getTitle();
     String content = resource.getContent();
     boardService.updateBoard(id, title, content);

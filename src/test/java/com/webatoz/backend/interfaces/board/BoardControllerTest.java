@@ -35,7 +35,7 @@ public class BoardControllerTest {
   @Test
   public void 게시판조회() throws Exception {
     List<Board> boards = new ArrayList<>();
-    boards.add(new Board(1004L, "Test", "hi", 0L));
+    boards.add(Board.builder().boardId(1004).title("Test").content("hi").views(0).build());
 
     given(boardService.getBoards()).willReturn(boards);
 
@@ -44,18 +44,18 @@ public class BoardControllerTest {
         .andExpect(content().string(containsString("\"board_id\":1004")))
         .andExpect(content().string(containsString("\"title\":\"Test\"")))
         .andExpect(content().string(containsString("\"content\":\"hi\"")))
-        .andExpect(content().string(containsString("\"view\":0")));
+        .andExpect(content().string(containsString("\"views\":0")));
   }
 
   @Test
   public void detail() throws Exception {
-    Board board1 = new Board(1004L, "Test2", "hi", 0L);
-    Board board2 = new Board(2020L, "boards", "hi", 0L);
-    board1.addUser(new User(1L, "sbim"));
-    board2.addUser(new User(1L, "sbim"));
+    Board board1 = Board.builder().boardId(1004).title("Test2").content("hi").views(0).build();
+    Board board2 = Board.builder().boardId(2020).title("boards").content("hi").views(0).build();
+    //board1.addUser(new User(1L, "sbim"));
+    //board2.addUser(new User(1L, "sbim"));
 
-    given(boardService.getBoard(1004L)).willReturn(board1);
-    given(boardService.getBoard(2020L)).willReturn(board2);
+    given(boardService.getBoard(1004)).willReturn(board1);
+    given(boardService.getBoard(2020)).willReturn(board2);
 
     mvc.perform(get("/boards/1004"))
         .andExpect(status().isOk())
@@ -73,7 +73,7 @@ public class BoardControllerTest {
   public void create() throws Exception {
     mvc.perform(post("/boards")
         .contentType(MediaType.APPLICATION_JSON)
-        .content("{\"title\":\"Hello\",\"content\":\"hi\",\"view\":0}"))
+        .content("{\"title\":\"Hello\",\"content\":\"hi\",\"views\":0}"))
         .andExpect(status().isCreated())
         .andExpect(header().string("location", "/boards/1234"))
         .andExpect(content().string("{}"));
@@ -85,9 +85,9 @@ public class BoardControllerTest {
   public void update() throws Exception {
    mvc.perform(patch("/boards/1004")
        .contentType(MediaType.APPLICATION_JSON)
-       .content("{\"title\":\"LoL\",\"content\":\"hi\",\"view\":0}"))
+       .content("{\"title\":\"LoL\",\"content\":\"hi\",\"views\":0}"))
        .andExpect(status().isOk());
 
-   verify(boardService).updateBoard(1004L, "LoL", "hi");
+   verify(boardService).updateBoard(1004, "LoL", "hi");
   }
 }

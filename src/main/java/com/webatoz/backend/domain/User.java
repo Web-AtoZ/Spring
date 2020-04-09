@@ -1,10 +1,16 @@
 package com.webatoz.backend.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+
+@Getter
+@NoArgsConstructor
 public class User {
     @Id
     @GeneratedValue
@@ -16,13 +22,5 @@ public class User {
     public User(Long userId, String name) {
         this.userId = userId;
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Long getUserId() {
-        return userId;
     }
 }
