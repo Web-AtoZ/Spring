@@ -80,4 +80,16 @@ public class BoardServiceTest {
 
     assertThat(created.getBoardId(), is(1234L));
   }
+
+  @Test
+  public void updateBoard() {
+    Board board = new Board(1004L, "Test", "hi");
+
+    given(boardRepository.findById(1004L)).willReturn(Optional.of(board));
+
+    boardService.updateBoard(1004L, "LoL", "test");
+
+    assertThat(board.getTitle(), is("LoL"));
+    assertThat(board.getContent(), is("test"));
+  }
 }

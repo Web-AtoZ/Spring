@@ -5,6 +5,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
@@ -78,5 +79,15 @@ public class BoardControllerTest {
         .andExpect(content().string("{}"));
 
     verify(boardService).addBoard(any());
+  }
+
+  @Test
+  public void update() throws Exception {
+   mvc.perform(patch("/boards/1004")
+       .contentType(MediaType.APPLICATION_JSON)
+       .content("{\"title\":\"LoL\",\"content\":\"hi\",\"view\":0}"))
+       .andExpect(status().isOk());
+
+   verify(boardService).updateBoard(1004L, "LoL", "hi");
   }
 }

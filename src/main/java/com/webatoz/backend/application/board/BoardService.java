@@ -5,14 +5,17 @@ import com.webatoz.backend.domain.BoardRepository;
 import com.webatoz.backend.domain.User;
 import com.webatoz.backend.domain.UserRepository;
 import java.util.List;
+import javax.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class BoardService {
-  @Autowired BoardRepository boardRepository;
+  BoardRepository boardRepository;
 
-  @Autowired UserRepository userRepository;
+  UserRepository userRepository;
 
   public BoardService(BoardRepository boardRepository, UserRepository userRepository) {
     this.boardRepository = boardRepository;
@@ -35,5 +38,15 @@ public class BoardService {
 
   public Board addBoard(Board board) {
     return boardRepository.save(board);
+  }
+
+  @Transactional
+  public Board updateBoard(long boardId, String title, String content) {
+
+    Board board = boardRepository.findById(boardId).orElse(null);
+
+    board.updateInformation(title, content);
+
+    return board;
   }
 }
