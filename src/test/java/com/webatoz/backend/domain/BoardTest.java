@@ -3,6 +3,7 @@ package com.webatoz.backend.domain;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+import com.webatoz.backend.database.webatoz.board.Board;
 import org.junit.Test;
 
 public class BoardTest {

@@ -1,9 +1,7 @@
-package com.webatoz.backend.domain;
+package com.webatoz.backend.database.webatoz.board;
 
-import java.util.List;
-import java.util.Optional;
+import com.webatoz.backend.database.webatoz.board.Board;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 
 public interface BoardRepository extends JpaRepository<Board, Integer> {
 //  List<Board> findAll();

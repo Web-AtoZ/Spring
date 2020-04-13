@@ -1,13 +1,14 @@
 package com.webatoz.backend.interfaces.board;
 
 import com.webatoz.backend.application.board.BoardService;
-import com.webatoz.backend.domain.Board;
+import com.webatoz.backend.database.webatoz.board.Board;
+import com.webatoz.backend.interfaces.common.BaseController;
+import com.webatoz.backend.response.ResponseModel;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,27 +17,28 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
 @RequestMapping(value = "/boards")
 @RequiredArgsConstructor
-public class BoardController {
+public class BoardController extends BaseController {
 
   private final BoardService boardService;
 
   @GetMapping
-  public List<Board> list() {
+  public ResponseEntity list() {
     List<Board> boards = boardService.getBoards();
-    return boards;
+    ResponseModel responseModel = successResponseModel("boards", boardService.getBoards());
+    return ResponseEntity.ok(responseModel);
   }
 
   @GetMapping("/{id}")
-  public Board detail(@PathVariable("id") int boardId) throws Exception {
+  public ResponseEntity detail(@PathVariable("id") int boardId) throws Exception {
     Board board = boardService.getBoard(boardId);
-    return board;
+
+    return ResponseEntity.ok().body(board);
   }
 
   @PostMapping

@@ -1,9 +1,7 @@
 package com.webatoz.backend.application.board;
 
-import com.webatoz.backend.domain.Board;
-import com.webatoz.backend.domain.BoardRepository;
-import com.webatoz.backend.domain.User;
-import com.webatoz.backend.domain.UserRepository;
+import com.webatoz.backend.database.webatoz.board.Board;
+import com.webatoz.backend.database.webatoz.board.BoardRepository;
 import java.util.List;
 import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

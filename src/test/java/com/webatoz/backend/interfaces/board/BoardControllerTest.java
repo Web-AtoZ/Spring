@@ -12,8 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.webatoz.backend.application.board.BoardService;
-import com.webatoz.backend.domain.Board;
-import com.webatoz.backend.domain.User;
+import com.webatoz.backend.database.webatoz.board.Board;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;

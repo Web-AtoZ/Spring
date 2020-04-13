@@ -6,8 +6,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 
 import com.webatoz.backend.application.board.BoardService;
-import com.webatoz.backend.domain.Board;
-import com.webatoz.backend.domain.BoardRepository;
+import com.webatoz.backend.database.webatoz.board.Board;
+import com.webatoz.backend.database.webatoz.board.BoardRepository;
 import com.webatoz.backend.domain.User;
 import com.webatoz.backend.domain.UserRepository;
 import java.util.ArrayList;
