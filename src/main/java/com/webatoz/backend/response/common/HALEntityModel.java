@@ -12,7 +12,7 @@ public abstract class HALEntityModel extends RepresentationModel {
   private final Map<String, Object> embedded = new HashMap<>();
 
   @JsonInclude(JsonInclude.Include.NON_EMPTY)
-  @JsonProperty("_embedded")
+  @JsonProperty("data")
   public Map<String, Object> getEmbeddedModels() {
     return embedded;
   }
