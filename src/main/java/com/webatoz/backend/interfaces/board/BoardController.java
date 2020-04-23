@@ -6,6 +6,7 @@ import com.webatoz.backend.interfaces.common.BaseController;
 import com.webatoz.backend.response.ResponseModel;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
@@ -29,8 +30,9 @@ public class BoardController extends BaseController {
 
   @GetMapping
   public ResponseEntity list() {
-    List<Board> boards = boardService.getBoards();
+    //List<Board> boards = boardService.getBoards();
     ResponseModel responseModel = successResponseModel("boards", boardService.getBoards());
+
     return ResponseEntity.ok(responseModel);
   }
 
@@ -47,6 +49,10 @@ public class BoardController extends BaseController {
             .title(resource.getTitle())
             .content(resource.getContent())
             .views(0)
+            .userId(resource.getUserId())
+            .optionId(resource.getOptionId())
+            .createdDate(LocalDateTime.now())
+            .updatedDate(LocalDateTime.now())
             .build();
 
     boardService.addBoard(board);
