@@ -70,4 +70,5 @@ public class BoardController extends BaseController {
       @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
     return ResponseEntity.ok().body(assembler.toModel(boards));
+  }
 }

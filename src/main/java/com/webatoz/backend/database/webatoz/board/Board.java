@@ -1,5 +1,6 @@
 package com.webatoz.backend.database.webatoz.board;
 
+import com.webatoz.backend.domain.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -8,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Getter
@@ -26,9 +29,11 @@ public class Board {
 
   private Integer optionId;
 
-  @CreationTimestamp private LocalDateTime createdDate;
+  @CreationTimestamp
+  private LocalDateTime createdDate;
 
-  @UpdateTimestamp private LocalDateTime updatedDate;
+  @UpdateTimestamp
+  private LocalDateTime updatedDate;
 
   private LocalDateTime deletedDate;
   
