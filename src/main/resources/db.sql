@@ -617,3 +617,4 @@ COMMENT ON COLUMN "tags"."name" IS 'name';
 
 -- created_date
 COMMENT ON COLUMN "tags"."created_date" IS 'created_date';
+

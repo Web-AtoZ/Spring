@@ -1,31 +1,41 @@
 package com.webatoz.backend.database.webatoz.board;
 
-import java.time.LocalDateTime;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import java.time.LocalDateTime;
 
-@Data // 겟터 셋터 이콜, 해쉬
 @Entity
+@Getter
+@EqualsAndHashCode
 public class Board {
-  @Id @GeneratedValue private Integer boardId;
+    
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Integer boardId;
 
   private String title;
 
   private String content;
 
   private Integer views = 0;
+  
+  private Integer userId;
+
+  private Integer optionId;
 
   @CreationTimestamp private LocalDateTime createdDate;
 
   @UpdateTimestamp private LocalDateTime updatedDate;
 
   private LocalDateTime deletedDate;
-
-  private Integer userId;
-
-  private Integer optionId;
+  
+  public void setCreateData(CreateBoardDomain createBoardDomain) {
+    this.title = createBoardDomain.getTitle();
+    this.content = createBoardDomain.getContent();
+    this.userId = createBoardDomain.getUserId();
+    this.createdDate = LocalDateTime.now();
+  }
 }
