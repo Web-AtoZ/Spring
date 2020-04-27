@@ -14,10 +14,9 @@ public class BaseController {
     ResponseModel responseModel = new ResponseModel();
     responseModel.setCode(ErrorCode.SUCCESS.getCode());
     responseModel.setMessage(ErrorCode.SUCCESS.getMessage());
-
     responseModel.embeddedModel(relationship, model);
-
     responseModel.add(links);
+
     return responseModel;
   }
 }
