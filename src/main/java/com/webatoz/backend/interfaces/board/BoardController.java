@@ -1,6 +1,7 @@
 package com.webatoz.backend.interfaces.board;
 
 import com.webatoz.backend.database.webatoz.board.Board;
+
 import com.webatoz.backend.domain.CreateBoardDomain;
 import com.webatoz.backend.interfaces.common.BaseController;
 import com.webatoz.backend.response.BoardModel;
@@ -69,5 +70,4 @@ public class BoardController extends BaseController {
       @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
     return ResponseEntity.ok().body(assembler.toModel(boards));
-  }
 }

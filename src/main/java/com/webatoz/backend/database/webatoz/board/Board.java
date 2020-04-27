@@ -1,6 +1,5 @@
 package com.webatoz.backend.database.webatoz.board;
 
-import com.webatoz.backend.domain.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -14,36 +13,29 @@ import java.time.LocalDateTime;
 @Getter
 @EqualsAndHashCode
 public class Board {
-
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Integer boardId;
+    
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Integer boardId;
 
   private String title;
 
   private String content;
 
-  private Integer views;
-
+  private Integer views = 0;
+  
   private Integer userId;
 
   private Integer optionId;
 
-  private LocalDateTime createdDate;
+  @CreationTimestamp private LocalDateTime createdDate;
 
-  private LocalDateTime updatedDate;
+  @UpdateTimestamp private LocalDateTime updatedDate;
 
   private LocalDateTime deletedDate;
-
-//  @ManyToOne(fetch = FetchType.LAZY)
-//  @JoinColumn(name = "userId", referencedColumnName = "userId", insertable = false, updatable = false)
-//  private User user;
-
+  
   public void setCreateData(CreateBoardDomain createBoardDomain) {
     this.title = createBoardDomain.getTitle();
     this.content = createBoardDomain.getContent();
     this.userId = createBoardDomain.getUserId();
     this.createdDate = LocalDateTime.now();
   }
-
 }

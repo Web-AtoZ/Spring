@@ -9,7 +9,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableEncryptableProperties
 @EnableZuulProxy
 public class WebatozApplication {
-  // Test2
   public static void main(String[] args) {
     SpringApplication.run(WebatozApplication.class, args);
   }
