@@ -1,7 +1,7 @@
-package com.webatoz.backend.response;
+package com.webatoz.backend.domain.response;
 
 import com.webatoz.backend.global.error.exeption.ErrorCode;
-import com.webatoz.backend.response.common.HALEntityModel;
+import com.webatoz.backend.domain.common.HALEntityModel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

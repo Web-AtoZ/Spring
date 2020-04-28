@@ -2,8 +2,8 @@ package com.webatoz.backend.interfaces;
 
 import com.webatoz.backend.global.testentity.Test;
 import com.webatoz.backend.interfaces.common.BaseController;
-import com.webatoz.backend.response.ResponseModel;
-import com.webatoz.backend.response.TestModel;
+import com.webatoz.backend.domain.response.ResponseModel;
+import com.webatoz.backend.domain.response.TestModel;
 import org.springframework.hateoas.Link;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
