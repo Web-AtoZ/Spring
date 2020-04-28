@@ -1,6 +1,6 @@
 package com.webatoz.backend.database.webatoz.board;
 
-import com.webatoz.backend.domain.CreateBoardDomain;
+import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+
 
 @Entity
 @Getter

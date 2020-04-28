@@ -2,12 +2,13 @@ package com.webatoz.backend.interfaces.board;
 
 import com.webatoz.backend.database.webatoz.board.Board;
 
-import com.webatoz.backend.domain.CreateBoardDomain;
+import com.webatoz.backend.domain.board.CreateBoardDomain;
 import com.webatoz.backend.interfaces.common.BaseController;
-import com.webatoz.backend.response.BoardModel;
-import com.webatoz.backend.response.ResponseModel;
+import com.webatoz.backend.domain.response.BoardModel;
+import com.webatoz.backend.domain.response.ResponseModel;
 import com.webatoz.backend.services.board.BoardService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import lombok.var;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -26,6 +27,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(value = "/boards")
+@Slf4j
 public class BoardController extends BaseController {
 
   private final BoardService boardService;
@@ -33,6 +35,7 @@ public class BoardController extends BaseController {
   // 등록
   @PostMapping
   public ResponseEntity createBoard(@Valid @RequestBody CreateBoardDomain createBoardDomain) {
+
     Board createResult = boardService.createBoard(createBoardDomain);
 
     Link selfLink =

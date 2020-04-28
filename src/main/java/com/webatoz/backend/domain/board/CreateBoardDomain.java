@@ -1,4 +1,4 @@
-package com.webatoz.backend.domain;
+package com.webatoz.backend.domain.board;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

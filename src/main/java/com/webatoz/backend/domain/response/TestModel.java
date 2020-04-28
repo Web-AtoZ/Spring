@@ -1,4 +1,4 @@
-package com.webatoz.backend.response;
+package com.webatoz.backend.domain.response;
 
 import com.webatoz.backend.global.testentity.Test;
 import lombok.Getter;

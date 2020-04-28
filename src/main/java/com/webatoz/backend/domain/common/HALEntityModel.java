@@ -1,4 +1,4 @@
-package com.webatoz.backend.response.common;
+package com.webatoz.backend.domain.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

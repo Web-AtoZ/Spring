@@ -1,9 +1,11 @@
 package com.webatoz.backend.domain;
 
+import com.webatoz.backend.database.webatoz.board.BoardRepository;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Getter
 @Setter
@@ -17,4 +19,5 @@ public class CommentDomain {
         this.title = title;
         this.text = text;
     }
+
 }

@@ -3,7 +3,7 @@ package com.webatoz.backend.services.board;
 import com.webatoz.backend.database.webatoz.board.Board;
 import com.webatoz.backend.database.webatoz.board.BoardRepository;
 
-import com.webatoz.backend.domain.CreateBoardDomain;
+import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
