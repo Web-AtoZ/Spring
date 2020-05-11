@@ -56,5 +56,6 @@ public class Board {
   public void updateInformation(String title, String content) {
     this.title=title;
     this.content=content;
+    this.updatedDate = LocalDateTime.now();
   }
 }

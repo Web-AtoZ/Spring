@@ -8,8 +8,8 @@ import static org.mockito.BDDMockito.given;
 import com.webatoz.backend.application.board.BoardService;
 import com.webatoz.backend.database.webatoz.board.Board;
 import com.webatoz.backend.database.webatoz.board.BoardRepository;
+import com.webatoz.backend.database.webatoz.user.UserRepository;
 import com.webatoz.backend.domain.User;
-import com.webatoz.backend.domain.UserRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -52,7 +52,7 @@ public class BoardServiceTest {
 
   private void mockUserRepository() {
     User user = new User(1L, "sbim");
-    given(userRepository.findUserByBoard(1004L)).willReturn(user);
+    //given(userRepository.findUserByBoard(1004L)).willReturn(user);
   }
 
   @Test
