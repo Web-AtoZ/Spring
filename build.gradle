@@ -45,6 +45,7 @@ dependencies {
 	runtimeOnly group: "org.springframework.boot", name: "spring-boot-devtools"
 	compile group: "com.google.googlejavaformat", name: "google-java-format", version: "1.7"
 	compile group: "org.springframework.boot", name: "spring-boot-starter-web"
+	compile group: "org.springframework.boot", name: "spring-boot-starter-security"
 	testCompile group: "org.springframework.boot", name: "spring-boot-starter-test"
 	annotationProcessor group: "org.springframework.boot", name: "spring-boot-configuration-processor"
 
@@ -53,6 +54,8 @@ dependencies {
 	annotationProcessor "org.projectlombok:lombok:1.18.12"
 	testCompileOnly "org.projectlombok:lombok:1.18.12"
 	testAnnotationProcessor "org.projectlombok:lombok:1.18.12"
+	runtime 'io.jsonwebtoken:jwt-impl:0.11.1'
+	runtime 'io.jsonwebtoken:jwt-jackson:0.11.1'
 
 	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
 	compile group: "org.slf4j", name: "slf4j-api", version: "1.7.30"
@@ -91,5 +94,8 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-zuul
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version: '2.1.2.RELEASE'
+
+	compile group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.1'
+
 
 }
