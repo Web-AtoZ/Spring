@@ -1,7 +1,6 @@
-package com.webatoz.backend.database.webatoz.board;
+package com.webatoz.backend.database.webatoz.user;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +10,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
+@Builder
+@NoArgsConstructor
 @EqualsAndHashCode
 public class User {
 
