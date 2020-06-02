@@ -16,6 +16,7 @@ public class JasyptConfigTest {
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
         pbeEnc.setPassword("abc"); // 변경 필요
 
+        
         String url = "";
         String username = "";
         String password = "";
