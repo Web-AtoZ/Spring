@@ -15,7 +15,6 @@ public class JasyptConfigTest {
         StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
         pbeEnc.setPassword("abc"); // 변경 필요
-
         
         String url = "";
         String username = "";
