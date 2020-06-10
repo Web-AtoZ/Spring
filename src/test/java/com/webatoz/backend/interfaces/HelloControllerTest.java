@@ -21,7 +21,7 @@ public class HelloControllerTest {
 
     @Test
     public void getStudents() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/students"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/boards"))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
