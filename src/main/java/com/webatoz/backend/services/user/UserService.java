@@ -2,6 +2,8 @@ package com.webatoz.backend.services.user;
 
 import com.webatoz.backend.database.webatoz.user.User;
 import com.webatoz.backend.database.webatoz.user.UserRepository;
+import com.webatoz.backend.interfaces.user.EmailNotExistedException;
+import com.webatoz.backend.interfaces.user.PasswordWrongException;
 import com.webatoz.backend.interfaces.user.UserExistedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,9 +19,11 @@ public class UserService {
 
     UserRepository userRepository;
 
+    PasswordEncoder secretEncoder;
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, PasswordEncoder secretEncoder) {
         this.userRepository = userRepository;
+        this.secretEncoder = secretEncoder;
     }
 
     public User registerUser(String email, String name, String secret) {
@@ -29,7 +33,6 @@ public class UserService {
             throw new UserExistedException(email);
         }
 
-        PasswordEncoder secretEncoder = new BCryptPasswordEncoder();
         String encodedSecret = secretEncoder.encode(secret);
 
         User user = User.builder()
@@ -40,4 +43,16 @@ public class UserService {
 
         return userRepository.save(user);
     }
+
+    public User authenticate(String email, String secret) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new EmailNotExistedException(email));
+
+        if(!secretEncoder.matches(secret, user.getSecret())){
+            throw new PasswordWrongException();
+        }
+
+        return user;
+    }
+
 }

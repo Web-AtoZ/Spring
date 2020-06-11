@@ -28,6 +28,10 @@ public class User {
 
   private String secret;
 
+  private String snsType;
+
+  private String snsProfile;
+
   private LocalDateTime createdDate;
 
   private LocalDateTime updatedDate;
