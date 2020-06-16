@@ -1,6 +1,7 @@
 package com.webatoz.backend.interfaces.user;
 
 //import com.webatoz.backend.utils.JwtUtil;
+import com.webatoz.backend.database.webatoz.user.User;
 import com.webatoz.backend.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,13 +23,14 @@ public class TokenController {
 
     @PostMapping("/token")
     public ResponseEntity<TokenResponseDto> create(@RequestBody TokenRequestDto resource) throws URISyntaxException {
-        String accessToken = "ACCESSTOKEN";
 
         String email = resource.getEmail();
         String secret = resource.getSecret();
 
-        userService.authenticate(email,secret);
+        User user = userService.authenticate(email, secret);
 
+        String accessToken = user.getAccessToken();
+        
         TokenResponseDto tokenDto = TokenResponseDto.builder()
                 .accessToken(accessToken)
                 .build();

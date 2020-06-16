@@ -1,5 +1,6 @@
 package com.webatoz.backend.interfaces.user;
 
+import com.webatoz.backend.database.webatoz.user.User;
 import com.webatoz.backend.services.user.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
@@ -36,6 +39,12 @@ public class TokenControllerTest {
 //  //given(jwtUtil.createToken(id,name)).willReturn("header.payload.signature");
     @Test
     public void createWithvaildAttributes() throws Exception {
+        String email = "tester@example.com";
+        String password = "test";
+
+        User mockUser = User.builder().secret("ACCESSTOKEN").build();
+
+        given(userService.authenticate(email,password)).willReturn(mockUser);
         mvc.perform(post("/token")
             .contentType(MediaType.APPLICATION_JSON)
             .content("{\"email\":\"tester@example.com\",\"password\":\"test\"}"))
@@ -43,7 +52,7 @@ public class TokenControllerTest {
                 .andExpect(header().string("location","/token"))
                 .andExpect(content().string("{\"access_token\":\"ACCESSTOKEN\"}"));
 
-        verify(userService).authenticate(eq("tester@example.com"), eq("test"));
+        verify(userService).authenticate(eq(email), eq(password));
     }
 
     @Test
@@ -84,6 +93,18 @@ public class TokenControllerTest {
         verify(userService).authenticate(eq("x@example.com"), eq("test"));
     }
 
+    @Test
+    public void accessTokenWithPassword() {
+        User user = User.builder().secret("ACCESSTOKEN").build();
 
+        assertThat(user.getAccessToken(), is("ACCESSTOKEN"));
+    }
+
+    @Test
+    public void accessTokenWithoutPassword() {
+        User user = new User();
+
+        assertThat(user.getAccessToken(), is(""));
+    }
 
 }
