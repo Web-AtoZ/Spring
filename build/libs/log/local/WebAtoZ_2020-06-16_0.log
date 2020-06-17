@@ -1,0 +1,109 @@
+[23:29:01.124] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:29:01.124] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2583 ms
+[23:29:09.069] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:29:09.154] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:29:09.208] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:29:09.223] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:29:13.284] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:29:13.285] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:29:13.295] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:29:13.295] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[23:29:13.310] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:29:13.326] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:29:13.365] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:40:11.837] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:40:11.837] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2642 ms
+[23:40:18.926] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:40:19.033] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:40:19.103] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:40:19.117] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:40:20.134] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:40:20.135] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:40:20.144] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:40:20.144] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[23:40:20.165] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:40:20.180] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:40:20.214] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:40:20.235] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:40:20.236] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:40:20.247] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:45:28.348] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:45:28.349] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 4397 ms
+[23:45:37.419] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:45:37.530] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:45:37.599] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:45:37.619] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:45:38.682] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:45:38.682] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:45:38.694] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:45:38.695] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 13 ms
+[23:45:38.711] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:45:38.734] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:45:38.773] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:46:25.214] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:46:25.215] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2891 ms
+[23:46:35.634] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:46:35.728] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:46:35.777] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:46:35.802] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:46:45.944] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:46:45.944] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:46:45.954] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:46:45.954] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[23:46:45.971] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:46:45.983] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:46:46.031] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:47:56.579] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[23:47:56.583] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[23:47:56.877] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:47:56.879] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:47:56.950] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:48:02.066] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:02.069] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:02.080] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:48:04.935] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:04.937] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:04.939] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:48:05.990] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:05.994] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:06.001] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:48:06.965] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:06.968] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:06.971] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:48:07.452] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:07.454] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:07.456] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:48:07.924] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:48:07.926] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:48:07.930] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:52:20.349] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:52:20.349] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 3050 ms
+[23:52:28.847] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:52:28.962] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:52:29.024] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:52:29.041] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:52:30.221] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:52:30.221] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:52:30.231] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:52:30.231] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[23:52:30.253] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[23:52:30.266] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[23:52:30.938] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:52:30.939] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:52:31.036] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:52:31.803] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:52:31.807] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:52:31.816] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 304 NOT_MODIFIED
+[23:59:20.241] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:59:20.242] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2961 ms
+[23:59:29.010] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:59:29.130] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[23:59:29.194] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:59:29.212] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:59:30.564] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:59:30.565] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:59:30.577] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:59:30.578] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 13 ms
+[23:59:30.595] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
+[23:59:30.614] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:59:30.657] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK

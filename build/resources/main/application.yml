@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+jasypt:
+  encryptor:
+    property:
+      prefix: ENC(
+      suffix: )
+    poolSize: 1
+    algorithm: PBEWithMD5AndDES
+    password: ${dbkey} # key 별도 안내 예정
+
+spring:
+  application:
+    name: webatoz-backend
+  jackson:
+    # naming convention 종류 : LOWER_CAMEL_CASE / LOWER_CASE / SNAKE_CASE / UPPER_CAMEL_CASE / KEBAB_CASE
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    webatoz:
+      jdbc-url: ENC(xG9Wb4NPLuL5SKfJacQMpBn3PQpDg0glKh7J+YtGFBaRtDg1PIoCkJSUCpwRQ+URVMmAom+j2rQ=)
+      username: ENC(4zlm6cwvvV5H6gXRRcJMSQ==)
+      password: ENC(/B8MdkzbCPEI7AIQTXSVBfQz7qJjma8o)
+      driver-class-name: org.postgresql.Driver
+
+#Zuul routes. "/boards/*/comments/*" 이 경로로 유입되는 것은 "/comments/*"로 연결한다.]
+# *  : 0개또는 그이상의 글자
+# ** : 0개또는 그이상의 디렉토리 경로
+
+zuul:
+  routes:
+    webatoz-backend:
+      path: /replies/**
+      url: http://localhost:8080/comments
+
+
+
+

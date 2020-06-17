@@ -33,7 +33,7 @@ public class WebatozApplicationTests {
         driver.quit();
     }
 
-    @Test
+//    @Test
     public void jsoup() throws IOException {
         Map<String, Object> map = new HashMap<>();
 
