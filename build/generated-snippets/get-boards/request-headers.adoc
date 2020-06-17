@@ -1,0 +1,10 @@
+|===
+|Name|Description
+
+|`+Content-Type+`
+|application/json
+
+|`+Accept+`
+|application/hal+json
+
+|===

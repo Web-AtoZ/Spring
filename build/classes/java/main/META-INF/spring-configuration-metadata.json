@@ -1,0 +1,167 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.webatoz",
+      "type": "com.webatoz.backend.global.config.database.Webatoz",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.webatoz.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.data-source-j-n-d-i",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.health-check-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.password",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.scheduled-executor",
+      "type": "java.util.concurrent.ScheduledExecutorService",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.transaction-isolation",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.username",
+      "type": "java.lang.String",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    },
+    {
+      "name": "spring.datasource.webatoz.validation-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.webatoz.backend.global.config.database.Webatoz"
+    }
+  ],
+  "hints": []
+}

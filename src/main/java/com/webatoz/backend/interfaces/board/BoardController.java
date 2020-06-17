@@ -15,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.hateoas.Link;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -57,7 +58,7 @@ public class BoardController extends BaseController {
       @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
 
-    var pagedModel = assembler.toModel(boards, board -> new BoardModel(board));
+    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, board -> new BoardModel(board));
 
     pagedModel.add(
         linkTo(BoardController.class)
