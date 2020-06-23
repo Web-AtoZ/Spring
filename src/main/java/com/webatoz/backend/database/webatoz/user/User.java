@@ -39,13 +39,6 @@ public class User {
 
   private LocalDateTime deletedDate;
 
-  @JsonIgnore
-  public String getAccessToken() {
-    if(secret == null) {
-      return "";
-    }
-    return secret.substring(0,10);
-  }
 //  @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
 //  private Set<Board> boards = new HashSet<>();
 }

@@ -1,6 +1,8 @@
 package com.webatoz.backend.global.config.security;
 
 //import com.webatoz.backend.utils.JwtUtil;
+import com.webatoz.backend.utils.JwtUtil;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -12,6 +14,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityJavaConfig extends WebSecurityConfigurerAdapter {
+  @Value("${jwt.secret}")
+  private String secret;
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
@@ -27,8 +31,9 @@ public class SecurityJavaConfig extends WebSecurityConfigurerAdapter {
   public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder();
   }
-  //  @Bean
-  //  public JwtUtil() {
-  //    return new JwtUtil();
-  //  }
+
+  @Bean
+  public JwtUtil JwtUtil() {
+      return new JwtUtil(secret);
+  }
 }

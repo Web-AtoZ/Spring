@@ -34,6 +34,7 @@ zuul:
       path: /replies/**
       url: http://localhost:8080/comments
 
-
+jwt:
+  secret: 12345678901234567890123456789012
 
 
