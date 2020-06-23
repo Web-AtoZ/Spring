@@ -67,3 +67,15 @@ use of HTTP status codes.
  GET /boards
 
 operation::get-boards[snippets='request-parameters,curl-request,response-fields,links,http-response']
+
+
+
+[[restaurant]]
+= Restaurant
+
+[[restaurant-get-restaurants]]
+== 식당 목록 조회
+
+ GET /restaurants
+
+operation::get-restaurants[snippets='request-parameters,curl-request,response-fields,links,http-response']

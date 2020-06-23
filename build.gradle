@@ -1,3 +1,19 @@
+buildscript {
+	ext {
+		springBootVersion = '2.2.5.RELEASE'
+		querydslPluginVersion = '1.0.10' // 플러그인 버전
+		querydslVersion = '4.2.1'
+	}
+	repositories {
+		maven { url "https://plugins.gradle.org/m2/" } // 플러그인 저장소
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath "io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE"
+		classpath("gradle.plugin.com.ewerk.gradle.plugins:querydsl-plugin:${querydslPluginVersion}")
+	}
+}
+
 plugins {
     id "org.springframework.boot" version "2.2.5.RELEASE"
 	id "io.spring.dependency-management" version "1.0.9.RELEASE"
@@ -75,9 +91,6 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4
 	compile group: "org.bgee.log4jdbc-log4j2", name: "log4jdbc-log4j2-jdbc4", version: "1.16"
 
-	// health check
-//	compile("org.springframework.boot:spring-boot-starter-actuator")
-
 	// 데이터베이스 postgres
 	compile group: "org.postgresql", name: "postgresql", version: "42.1.4"
 
@@ -112,4 +125,32 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
 
+	// querydsl
+	compile("com.querydsl:querydsl-jpa:${querydslVersion}")
+	compile("com.querydsl:querydsl-apt:${querydslVersion}")
+}
+
+// querydsl 적용
+apply plugin: "com.ewerk.gradle.plugins.querydsl" // Plugin 적용
+def querydslSrcDir = 'src/main/generated' // QClass 생성 위치
+
+querydsl {
+	library = "com.querydsl:querydsl-apt:${querydslVersion}"
+	jpa = true
+	querydslSourcesDir = querydslSrcDir
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs = ['src/main/java', querydslSrcDir]
+		}
+	}
+}
+compileQuerydsl{
+	options.annotationProcessorPath = configurations.querydsl
+}
+
+configurations {
+	querydsl.extendsFrom compileClasspath
 }
