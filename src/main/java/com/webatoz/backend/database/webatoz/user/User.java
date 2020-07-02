@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
+import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 @Getter
@@ -21,7 +22,7 @@ public class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer userId;
 
-  private String id;
+  private String account;
 
   private String name;
 
@@ -29,8 +30,9 @@ public class User {
 
   private String secret;
 
+  @ColumnDefault("webatoz")
   private String snsType;
-
+  @ColumnDefault("/")
   private String snsProfile;
 
   private LocalDateTime createdDate;

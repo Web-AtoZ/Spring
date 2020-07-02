@@ -38,27 +38,37 @@ public class UserServiceTest {
 
     @Test
     public void registerUser() {
-        String email = "tester@example.com";
-        String name = "Tester";
-        String secret = "test";
+        User mockUser = User.builder()
+            .userId(1004)
+            .account("tests")
+            .email("tester@example.com")
+            .name("Tester")
+            .secret("test")
+            .build();
 
-        userService.registerUser(email, name, secret);
+        userService.registerUser(mockUser);
 
         verify(userRepository).save(any());
     }
 
     @Test(expected = UserExistedException.class)
     public void registerUserWithExistedEmail() {
-        String email = "tester@example.com";
-        String name = "Tester";
-        String secret = "test";
+        User mockUser = User.builder()
+            .userId(1004)
+            .account("tests")
+            .email("tester@example.com")
+            .name("Tester")
+            .secret("test")
+            .build();
+
+        String email = mockUser.getEmail();
 
         User user = User.builder()
                 .build();
 
         given(userRepository.findByEmail(email)).willReturn(Optional.of(user));
 
-        userService.registerUser(email, name, secret);
+        userService.registerUser(mockUser);
 
         verify(userRepository, never()).save(any());
     }

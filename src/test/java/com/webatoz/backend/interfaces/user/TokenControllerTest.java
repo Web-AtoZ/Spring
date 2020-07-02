@@ -44,22 +44,22 @@ public class TokenControllerTest {
         String email = "tester@example.com";
         Integer id = 1004;
         String name = "John";
-        String password = "test";
+        String secret = "test";
 
         User mockUser = User.builder().userId(id).name(name).build();
 
-        given(userService.authenticate(email,password)).willReturn(mockUser);
+        given(userService.authenticate(email,secret)).willReturn(mockUser);
 
         given(jwtUtil.createToken(id,name)).willReturn("header.payload.signature");
 
         mvc.perform(post("/token")
             .contentType(MediaType.APPLICATION_JSON)
-            .content("{\"email\":\"tester@example.com\",\"password\":\"test\"}"))
+            .content("{\"email\":\"tester@example.com\",\"secret\":\"test\"}"))
                 .andExpect(status().isCreated())
                 .andExpect(header().string("location","/token"))
-                .andExpect(content().string(containsString("{\"access_token\":\"header.payload.signature\"}")));
+                .andExpect(content().string(containsString("header.payload.signature")));
 
-        verify(userService).authenticate(eq(email), eq(password));
+        verify(userService).authenticate(eq(email), eq(secret));
     }
 
     @Test
@@ -69,7 +69,7 @@ public class TokenControllerTest {
 
         mvc.perform(post("/token")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"tester@example.com\",\"password\":\"x\"}"))
+                .content("{\"email\":\"tester@example.com\",\"secret\":\"x\"}"))
                 .andExpect(status().isBadRequest());
 
         verify(userService).authenticate(eq("tester@example.com"), eq("x"));
@@ -82,7 +82,7 @@ public class TokenControllerTest {
 
         mvc.perform(post("/token")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"tester@example.com\",\"password\":\"test\"}"))
+                .content("{\"email\":\"tester@example.com\",\"secret\":\"test\"}"))
                 .andExpect(status().isBadRequest());
 
         verify(userService).authenticate(eq("tester@example.com"), eq("x"));
@@ -94,7 +94,7 @@ public class TokenControllerTest {
 
         mvc.perform(post("/token")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"x@example.com\",\"password\":\"test\"}"))
+                .content("{\"email\":\"x@example.com\",\"secret\":\"test\"}"))
                 .andExpect(status().isBadRequest());
 
         verify(userService).authenticate(eq("x@example.com"), eq("test"));

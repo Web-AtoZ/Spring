@@ -33,20 +33,22 @@ public class UserControllerTest {
 
     User mockUser = User.builder()
             .userId(1004)
+            .account("tests")
             .email("tester@example.com")
             .name("Tester")
             .secret("test")
             .build();
 
-    given(userService.registerUser("tester@example.com", "Tester", "test"))
+    given(userService.registerUser(mockUser))
       .willReturn(mockUser);
 
     mvc.perform(post("/users")
+        //.header("Authorization", "Bearer "+token)
         .contentType(MediaType.APPLICATION_JSON)
         .content("{\"email\":\"tester@example.com\",\"name\":\"Tester\",\"password\":\"test\"}"))
         .andExpect(status().isCreated())
         .andExpect(header().string("location","/users/1004"));
 
-    verify(userService).registerUser(eq("tester@example.com"), eq("Tester"), eq("test"));
+    verify(userService).registerUser(eq(mockUser));
   }
 }

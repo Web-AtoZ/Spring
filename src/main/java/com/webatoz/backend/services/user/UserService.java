@@ -26,16 +26,21 @@ public class UserService {
         this.secretEncoder = secretEncoder;
     }
 
-    public User registerUser(String email, String name, String secret) {
-        Optional<User> existed = userRepository.findByEmail(email);
+    public User registerUser(User resource) {
+        String account = resource.getAccount();
+        String email = resource.getEmail();
+        String secret = resource.getSecret();
+        String name = resource.getName();
+        Optional<User> existed = userRepository.findByAccount(account);
 
         if(existed.isPresent()) {
-            throw new UserExistedException(email);
+            throw new UserExistedException(account);
         }
 
         String encodedSecret = secretEncoder.encode(secret);
 
         User user = User.builder()
+                .account(account)
                 .email(email)
                 .name(name)
                 .secret(encodedSecret)

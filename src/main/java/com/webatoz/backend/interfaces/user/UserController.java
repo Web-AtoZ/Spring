@@ -22,16 +22,15 @@ public class UserController {
     public ResponseEntity<?> create(
             @RequestBody User resource
     ) throws URISyntaxException {
-        String email = resource.getEmail();
-        String name = resource.getName();
-        String secret = resource.getSecret();
+        User user = userService.registerUser(resource);
 
-        User user = userService.registerUser(
-                email,
-                name,
-                secret
-        );
-        String url = "/users/"+user.getId();
+        String url = "/users/"+user.getUserId();
         return ResponseEntity.created(new URI(url)).body("{}");
     }
+//    public ResponseEntity<?> login (
+//    Authentication authentication,
+//    @RequestBody User resource) {
+//     Claims claims = (Claims) authentication.getPrincipal();
+//      String name = claims.get("name", String.class);
+//    }
 }
