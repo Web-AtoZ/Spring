@@ -55,6 +55,10 @@ public class ErrorResponse {
         return new ErrorResponse(code, errors);
     }
 
+    public static ErrorResponse of(final ErrorCode code, final DefaultError errors) {
+        return new ErrorResponse(code, errors.getMessage());
+    }
+
     public static ErrorResponse of(MethodArgumentTypeMismatchException e) {
         final String value = e.getValue() == null ? "" : e.getValue().toString();
         final List<ErrorResponse.FieldError> errors = ErrorResponse.FieldError.of(e.getName(), value, e.getErrorCode());
@@ -89,6 +93,22 @@ public class ErrorResponse {
                             error.getRejectedValue() == null ? "" : error.getRejectedValue().toString(),
                             error.getDefaultMessage()))
                     .collect(Collectors.toList());
+        }
+    }
+
+
+    @Getter
+    @NoArgsConstructor
+    public static class DefaultError {
+        private String message;
+
+        private DefaultError(final String message) {
+            this.message = message;
+        }
+
+        public static DefaultError of(final String message) {
+
+            return new DefaultError(message);
         }
     }
 }

@@ -45,8 +45,6 @@
         </rollingPolicy>
     </appender>
 
-
-    <!-- 콘솔 & 파일에 로그 전달-->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>
@@ -58,7 +56,4 @@
     <logger name="com.webatoz" level="ERROR">
         <appender-ref ref="FILE-ERROR"/>
     </logger>
-
-    <logger name="com.webatoz.backend" level="INFO"/>
-
 </configuration>

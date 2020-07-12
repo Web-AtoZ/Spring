@@ -33,48 +33,78 @@ import org.springframework.test.web.servlet.MockMvc;
 @Import(RestDocsConfiguration.class)
 public class RestaurantControllerTest {
 
-  @Autowired
-  private MockMvc mockMvc;
+  @Autowired private MockMvc mockMvc;
 
   @Test
   public void getRestaurantsTest() throws Exception {
-    mockMvc.perform(
-        get("/restaurants")
-            .contentType(MediaType.APPLICATION_JSON_UTF8)
-            .accept(MediaTypes.HAL_JSON)
-    )
+    mockMvc
+        .perform(
+            get("/restaurants")
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .accept(MediaTypes.HAL_JSON)
+                    .param("name", "")
+                    .param("optionName", ""))
         .andDo(print())
         .andExpect(status().isOk())
-        .andDo(document("get-restaurants",
-            requestHeaders(
-                headerWithName("Content-Type").description("application/json"),
-                headerWithName("Accept").description("application/hal+json")
-            ),
-            requestParameters(
-                parameterWithName("page").description("The page to retrieve (default=1)")
-                    .optional(),
-                parameterWithName("size").description("Entries per page (default=20)").optional()
-            ),
-            links(
-                linkWithRel("self").description("link to self"),
-                linkWithRel("profile").description("document link"),
-                linkWithRel("first").description("The first page of results").optional(),
-                linkWithRel("prev").description("The previous page of results").optional(),
-                linkWithRel("next").description("The next page of results").optional(),
-                linkWithRel("last").description("The last page of results").optional()
-            ),
-            relaxedResponseFields(
-//                fieldWithPath("_embedded.boards").description("list of board"),
-//                fieldWithPath("_embedded.boards[].id").description("id"),
-//                fieldWithPath("_embedded.boards[].title").description("title"),
-//                fieldWithPath("_embedded.boards[].created_date").description("created_date").optional(),
-//                fieldWithPath("_embedded.boards[].updated_date").description("updated_date").optional(),
-//                fieldWithPath("_embedded.boards[].deleted_date").description("deleted_date").optional(),
-                fieldWithPath("page.size").description("elements size per page"),
-                fieldWithPath("page.total_elements").description("total element count of results"),
-                fieldWithPath("page.total_pages").description("total page count"),
-                fieldWithPath("page.number").description("current page")
-            )
-        ));
+        .andDo(
+            document(
+                "get-restaurants",
+                requestHeaders(
+                    headerWithName("Content-Type").description("application/json"),
+                    headerWithName("Accept").description("application/hal+json")),
+                requestParameters(
+                    parameterWithName("name").description("The restaurant name").optional(),
+                    parameterWithName("optionName").description("The category name").optional(),
+                    parameterWithName("page")
+                        .description("The page to retrieve (default=1)")
+                        .optional(),
+                    parameterWithName("size")
+                        .description("Entries per page (default=20)")
+                        .optional()),
+                links(
+                    linkWithRel("self").description("link to self"),
+                    linkWithRel("profile").description("document link"),
+                    linkWithRel("first").description("The first page of results").optional(),
+                    linkWithRel("prev").description("The previous page of results").optional(),
+                    linkWithRel("next").description("The next page of results").optional(),
+                    linkWithRel("last").description("The last page of results").optional()),
+                relaxedResponseFields(
+                    fieldWithPath("_embedded.restaurants").description("list of restaurant"),
+                    fieldWithPath("_embedded.restaurants[].restaurant_id").description("id"),
+                    fieldWithPath("_embedded.restaurants[].name").description("name"),
+                    fieldWithPath("_embedded.restaurants[].created_date")
+                        .description("created_date")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].updated_date")
+                        .description("updated_date")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].deleted_date")
+                        .description("deleted_date")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].address")
+                        .description("address")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].lng").description("lng").optional(),
+                    fieldWithPath("_embedded.restaurants[].lat").description("lat").optional(),
+                    fieldWithPath("_embedded.restaurants[].option_id")
+                        .description("option_id")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].board_id")
+                        .description("board_id")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].road_address")
+                        .description("road_address")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].option_name")
+                        .description("option_name")
+                        .optional(),
+                    fieldWithPath("_embedded.restaurants[].phone").description("phone").optional(),
+                    fieldWithPath("_embedded.restaurants[].mapx").description("mapx").optional(),
+                    fieldWithPath("_embedded.restaurants[].mapy").description("mapy").optional(),
+                    fieldWithPath("page.size").description("elements size per page"),
+                    fieldWithPath("page.total_elements")
+                        .description("total element count of results"),
+                    fieldWithPath("page.total_pages").description("total page count"),
+                    fieldWithPath("page.number").description("current page"))));
   }
 }

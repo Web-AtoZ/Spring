@@ -5,13 +5,16 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 
 import com.webatoz.backend.database.webatoz.restaurant.Restaurant;
 import com.webatoz.backend.domain.response.ResponseModel;
+import com.webatoz.backend.domain.restaurant.RestaurantDomain;
 import com.webatoz.backend.interfaces.common.BaseController;
 import com.webatoz.backend.services.restaurant.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.hateoas.Link;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.data.web.PagedResourcesAssembler;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,21 +31,25 @@ public class RestaurantController extends BaseController {
 
   // 식당 리스트 모두 가져오기
   @GetMapping
-  public ResponseEntity<ResponseModel> getRestaurants(Restaurant restaurant, Pageable pageable) {
+  public ResponseEntity<ResponseModel> getRestaurants(
+      RestaurantDomain restaurant,
+      @PageableDefault(size = 10) Pageable pageable,
+      PagedResourcesAssembler<Restaurant> assembler) {
 
-    // TODO 검색 조건 받도록 설정하기
-    Page<Restaurant> restaurants = restaurantService.getRestaurants(pageable);
-//    Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, pageable);
+    Restaurant restaurant1 = new Restaurant(restaurant.getName(), restaurant.getOptionName());
 
-    Link selfLink =
-        linkTo(methodOn(RestaurantController.class).getRestaurants(restaurant, pageable)).withSelfRel();
-    Link profileLink =
+    Page<Restaurant> restaurants =
+        restaurantService.getRestaurants(restaurant1, pageable);
+    PagedModel<RestaurantDomain> pagedModel = assembler.toModel(restaurants, RestaurantDomain::new);
+
+    pagedModel.add(
+        linkTo(methodOn(RestaurantController.class).getRestaurants(restaurant, pageable, assembler))
+            .withSelfRel(),
         linkTo(RestaurantController.class)
             .slash("/docs/index.html#resources-get-restaurants")
-            .withRel("profile");
+            .withRel("profile"));
 
-    ResponseModel responseResource =
-        successResponseModel("restaurants", restaurants, selfLink, profileLink);
+    ResponseModel responseResource = successResponseModel("restaurants", pagedModel);
 
     return new ResponseEntity<>(responseResource, HttpStatus.OK);
   }

@@ -3,16 +3,15 @@ package com.webatoz.backend.database.webatoz.restaurant;
 import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+
+import lombok.*;
 
 @Entity
 @Getter
 @EqualsAndHashCode
 @ToString
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class Restaurant {
 
   @Id
@@ -31,4 +30,9 @@ public class Restaurant {
   private String phone;
   private String mapx;
   private String mapy;
+
+  public Restaurant(String name, String optionName) {
+    this.name = name;
+    this.optionName = optionName;
+  }
 }

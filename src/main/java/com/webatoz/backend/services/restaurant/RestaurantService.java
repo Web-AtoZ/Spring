@@ -23,6 +23,7 @@ public class RestaurantService {
   }
 
   public Page<Restaurant> getRestaurants(Restaurant restaurant, Pageable pageable) {
+
     return restaurantRepository.findRestaurant(restaurant, pageable);
   }
 }

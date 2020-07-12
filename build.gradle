@@ -1,3 +1,4 @@
+// querydsl
 buildscript {
 	ext {
 		springBootVersion = '2.2.5.RELEASE'

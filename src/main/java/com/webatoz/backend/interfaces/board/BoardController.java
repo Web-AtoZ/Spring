@@ -58,7 +58,7 @@ public class BoardController extends BaseController {
       @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
 
-    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, board -> new BoardModel(board));
+    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, BoardModel::new);
 
     pagedModel.add(
         linkTo(BoardController.class)
