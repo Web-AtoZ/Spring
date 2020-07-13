@@ -27,9 +27,11 @@ public class UserController {
         String url = "/users/"+user.getUserId();
         return ResponseEntity.created(new URI(url)).body("{}");
     }
-//    public ResponseEntity<?> login (
+
+
+//    public ResponseEntity<?> board (
 //    Authentication authentication,
-//    @RequestBody User resource) {
+//    @RequestBody Board resource) {
 //     Claims claims = (Claims) authentication.getPrincipal();
 //      String name = claims.get("name", String.class);
 //    }

@@ -25,14 +25,15 @@ public class TokenController {
     @PostMapping("/token")
     public ResponseEntity<String> create(@RequestBody TokenRequestDto resource) throws URISyntaxException {
 
-        String email = resource.getEmail();
+        String account = resource.getAccount();
         String secret = resource.getSecret();
 
-        User user = userService.authenticate(email, secret);
+        User user = userService.authenticate(account, secret);
 
         String accessToken = jwtUtil.createToken(user.getUserId(), user.getName());
 
         String url = "/token";
+
         return ResponseEntity.created(new URI(url)).body(accessToken);
     }
 }

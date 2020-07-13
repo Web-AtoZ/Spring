@@ -7,8 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
+
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Getter
@@ -16,6 +20,7 @@ import org.hibernate.annotations.ColumnDefault;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
+@Table(name="users", schema = "public")
 public class User {
 
   @Id
@@ -30,13 +35,14 @@ public class User {
 
   private String secret;
 
-  @ColumnDefault("webatoz")
   private String snsType;
-  @ColumnDefault("/")
+
   private String snsProfile;
 
+  @CreationTimestamp
   private LocalDateTime createdDate;
 
+  @UpdateTimestamp
   private LocalDateTime updatedDate;
 
   private LocalDateTime deletedDate;

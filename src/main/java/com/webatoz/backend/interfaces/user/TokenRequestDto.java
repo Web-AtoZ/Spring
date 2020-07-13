@@ -4,7 +4,6 @@ import lombok.Data;
 
 @Data
 public class TokenRequestDto {
-    private String email;
-
+    private String account;
     private String secret;
 }
