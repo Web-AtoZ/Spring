@@ -1,6 +1,7 @@
 package com.webatoz.backend.interfaces;
 
 import com.webatoz.backend.config.RestDocsConfiguration;
+import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.MediaType;
+import org.springframework.restdocs.payload.JsonFieldType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -18,10 +20,8 @@ import static org.springframework.restdocs.headers.HeaderDocumentation.requestHe
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
-import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
-import static org.springframework.restdocs.payload.PayloadDocumentation.relaxedResponseFields;
-import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
-import static org.springframework.restdocs.request.RequestDocumentation.requestParameters;
+import static org.springframework.restdocs.payload.PayloadDocumentation.*;
+import static org.springframework.restdocs.request.RequestDocumentation.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -38,8 +38,11 @@ public class BoardControllerTest {
 
     @Test
     public void getBoards() throws Exception {
+        JSONObject param = new JSONObject().put("name", "name");
+
         mockMvc.perform(
-                get("/boards")
+                get("/boards/{boardId}", 2)
+                        .param("size", "2")
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .accept(MediaTypes.HAL_JSON)
         )
@@ -49,6 +52,12 @@ public class BoardControllerTest {
                         requestHeaders(
                                 headerWithName("Content-Type").description("application/json"),
                                 headerWithName("Accept").description("application/hal+json")
+                        ),
+                        pathParameters(
+                                parameterWithName("boardId").description("board id")
+                        ),
+                        requestFields(
+                                fieldWithPath("name").description("name").optional()
                         ),
                         requestParameters(
                                 parameterWithName("page").description("The page to retrieve (default=1)").optional(),

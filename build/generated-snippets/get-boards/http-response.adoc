@@ -5,93 +5,50 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/hal+json
-Content-Length: 2419
+Content-Length: 1091
 
 {
   "_embedded" : {
-    "boards" : [ {
+    "boardList" : [ {
+      "board_id" : 8,
       "title" : "fsdsdz",
-      "created_date" : "2020-04-23 00:00:00",
-      "updated_date" : "2020-04-23 00:00:00",
-      "deleted_date" : null,
-      "id" : 8
+      "content" : "<p>xc</p>",
+      "views" : 0,
+      "user_id" : 1,
+      "option_id" : 1,
+      "created_date" : "2020-04-23T00:00:00",
+      "updated_date" : "2020-04-23T00:00:00",
+      "deleted_date" : null
     }, {
+      "board_id" : 6,
       "title" : "�벑濡� �뀒�뒪�듃�뀕",
+      "content" : "<p>�벑濡� �뀒�뒪�듃 ~~~~�뀑</p>",
+      "views" : null,
+      "user_id" : null,
+      "option_id" : null,
       "created_date" : null,
       "updated_date" : null,
-      "deleted_date" : null,
-      "id" : 6
-    }, {
-      "title" : "�샇濡쒕·濡쒌뀑�뀕",
-      "created_date" : "2020-04-23 00:00:00",
-      "updated_date" : "2020-04-23 00:00:00",
-      "deleted_date" : null,
-      "id" : 12
-    }, {
-      "title" : "�뀕�뀕",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 19
-    }, {
-      "title" : "濡ㅽ넗泥댁뒪",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 21
-    }, {
-      "title" : "�젋�뜑留� 理쒖쟻�솕 �옒�븯怨좎떢�떎",
-      "created_date" : "2020-04-23 00:00:00",
-      "updated_date" : "2020-04-23 00:00:00",
-      "deleted_date" : null,
-      "id" : 14
-    }, {
-      "title" : "test",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 22
-    }, {
-      "title" : "1234",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 23
-    }, {
-      "title" : "�뀋�뀋",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 20
-    }, {
-      "title" : "add",
-      "created_date" : "2020-04-28 00:00:00",
-      "updated_date" : "2020-04-28 00:00:00",
-      "deleted_date" : null,
-      "id" : 24
+      "deleted_date" : null
     } ]
   },
   "_links" : {
     "first" : {
-      "href" : "https://webatoz.com/boards?page=0&size=10"
+      "href" : "https://webatoz.com/boards/2?page=0&size=2"
     },
     "self" : {
-      "href" : "https://webatoz.com/boards?page=0&size=10"
+      "href" : "https://webatoz.com/boards/2?page=0&size=2"
     },
     "next" : {
-      "href" : "https://webatoz.com/boards?page=1&size=10"
+      "href" : "https://webatoz.com/boards/2?page=1&size=2"
     },
     "last" : {
-      "href" : "https://webatoz.com/boards?page=1&size=10"
-    },
-    "profile" : {
-      "href" : "https://webatoz.com/boards/docs/index.html#resources-get-boards"
+      "href" : "https://webatoz.com/boards/2?page=7&size=2"
     }
   },
   "page" : {
-    "size" : 10,
+    "size" : 2,
     "total_elements" : 15,
-    "total_pages" : 2,
+    "total_pages" : 8,
     "number" : 0
   }
 }

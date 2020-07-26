@@ -1,6 +1,6 @@
 [source,bash]
 ----
-$ http GET 'https://webatoz.com/boards' \
+$ http GET 'https://webatoz.com/boards/2?size=2' \
     'Content-Type:application/json;charset=UTF-8' \
     'Accept:application/hal+json'
 ----
