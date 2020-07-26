@@ -1,15 +1,13 @@
 package com.webatoz.backend.interfaces.board;
 
 import com.webatoz.backend.database.webatoz.board.Board;
-
 import com.webatoz.backend.domain.board.CreateBoardDomain;
-import com.webatoz.backend.interfaces.common.BaseController;
 import com.webatoz.backend.domain.response.BoardModel;
 import com.webatoz.backend.domain.response.ResponseModel;
+import com.webatoz.backend.interfaces.common.BaseController;
 import com.webatoz.backend.services.board.BoardService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -58,7 +56,7 @@ public class BoardController extends BaseController {
       @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
 
-    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, board -> new BoardModel(board));
+    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, BoardModel::new);
 
     pagedModel.add(
         linkTo(BoardController.class)
@@ -66,13 +64,5 @@ public class BoardController extends BaseController {
             .withRel("profile"));
 
     return ResponseEntity.ok().body(pagedModel);
-  }
-
-  // 목록 조회 (select 해온 모든 컬럼 return)
-  @GetMapping("/2")
-  public ResponseEntity getBoardLinks(
-      @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
-    Page<Board> boards = boardService.getBoards(pageable);
-    return ResponseEntity.ok().body(assembler.toModel(boards));
   }
 }

@@ -1,242 +1,116 @@
-[17:33:07.799] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d2509a
-[17:33:11.363] [WARN ] | o.s.w.c.s.GenericWebApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$JpaInvokerConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'webatoz': Could not bind properties to 'Webatoz' : prefix=spring.datasource.webatoz, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.webatoz.password' to java.lang.String
-[17:33:40.209] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@227009cc
-[17:33:51.797] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[17:33:51.890] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[17:33:51.959] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[17:33:51.981] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[17:33:53.925] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[17:33:54.178] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[17:33:54.184] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[17:33:54.544] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@227009cc, started on Wed Jun 17 17:33:40 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6a3f0df6
-[17:34:16.617] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@92ae4c0
-[17:34:26.472] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[17:34:26.575] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[17:34:26.657] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[17:34:26.686] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[17:34:28.603] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[17:34:28.817] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[17:34:28.819] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[17:34:29.013] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@92ae4c0, started on Wed Jun 17 17:34:16 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4f028a6b
-[18:32:18.051] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2c0092f7
-[18:32:26.466] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:32:26.554] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:32:26.619] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:32:26.640] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:32:28.386] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:32:28.619] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:32:28.621] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:32:28.830] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@2c0092f7, started on Wed Jun 17 18:32:18 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@533daf86
-[18:34:41.594] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[18:34:41.595] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1852 ms
-[18:34:47.368] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:34:47.410] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:34:47.437] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:34:47.449] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:34:48.440] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[18:34:48.441] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[18:34:48.451] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[18:34:48.451] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
-[18:34:48.462] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
-[18:34:48.469] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:34:48.924] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:34:48.925] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:34:48.960] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
-[18:34:49.966] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
-[18:34:49.967] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:34:50.010] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:34:50.011] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:34:50.015] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
-[18:37:25.456] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[18:37:25.457] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 912 ms
-[18:37:28.022] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@888ec33
-[18:37:29.958] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:37:29.977] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:37:30.100] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:37:30.108] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:37:37.600] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:37:37.707] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:37:37.770] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:37:37.789] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:37:39.312] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:37:39.528] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:37:39.532] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:37:39.719] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@888ec33, started on Wed Jun 17 18:37:28 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37aab834
-[18:38:05.018] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[18:38:05.018] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 673 ms
-[18:38:07.019] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5a834e67
-[18:38:10.116] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:38:10.133] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:38:10.151] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:38:10.159] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:38:16.362] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:38:16.456] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:38:16.538] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:38:16.555] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:38:18.402] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:38:19.009] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:38:19.012] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:38:19.265] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@5a834e67, started on Wed Jun 17 18:38:07 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@41881a1
-[18:39:11.120] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[18:39:11.121] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 694 ms
-[18:39:13.118] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@fffaf89
-[18:39:16.852] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:39:16.901] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:39:16.923] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:39:17.660] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:39:24.360] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:39:24.441] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:39:24.521] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:39:24.544] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:39:26.364] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
-[18:39:26.593] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:39:26.597] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
-[18:39:26.849] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@fffaf89, started on Wed Jun 17 18:39:13 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@18bda73e
-[18:41:59.701] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[18:41:59.702] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[18:41:59.713] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[18:41:59.713] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 11 ms
-[18:41:59.714] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:41:59.717] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:41:59.720] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:41:59.720] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:41:59.724] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:41:59.726] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:41:59.738] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:41:59.740] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:16.917] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:16.918] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:16.921] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:16.921] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:16.921] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:16.922] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:16.929] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:16.930] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:18.646] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:18.647] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:18.649] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:18.650] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:18.650] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:18.651] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:18.660] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:18.661] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:20.564] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:20.566] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:20.568] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:20.569] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:20.569] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:20.570] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:20.583] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:20.584] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:21.343] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:21.344] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:21.345] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:21.346] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:21.346] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:21.347] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:21.352] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:21.353] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:21.748] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:21.750] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:21.753] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:21.753] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:21.754] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:21.755] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:21.767] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:21.768] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:21.939] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:21.941] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:21.946] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:21.947] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:21.948] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:21.950] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:21.969] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:21.969] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:22.106] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:22.109] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:22.114] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:22.114] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:22.115] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:22.117] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:22.130] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:22.131] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:22.279] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:22.286] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:22.290] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:22.291] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:22.292] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:22.296] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:22.312] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:22.313] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:24.155] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:24.155] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:24.156] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:24.157] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:24.157] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:24.158] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:24.164] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:24.164] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:25.225] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:25.226] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:25.227] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:25.227] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:25.227] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:25.228] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:25.233] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:25.234] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:25.589] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:25.590] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:25.591] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:25.591] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:25.592] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:25.592] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:25.598] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:25.598] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:25.920] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:25.921] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:25.923] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:25.923] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:25.923] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:25.924] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:25.933] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:25.933] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:26.199] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:26.200] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:26.202] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:26.202] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:26.203] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:26.203] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:26.212] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:26.212] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:42:26.624] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/docs/index.html", parameters={}
-[18:42:26.625] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-[18:42:26.627] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
-[18:42:26.627] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
-[18:42:26.627] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
-[18:42:26.628] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-[18:42:26.639] [DEBUG] | o.s.w.s.v.ContentNegotiatingViewResolver | Selected 'text/html' given [text/html, text/html;q=0.8]
-[18:42:26.639] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
-[18:50:17.998] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@56d5cc5b
-[18:50:26.835] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:50:26.958] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:50:27.056] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:50:27.077] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:50:28.928] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@56d5cc5b, started on Wed Jun 17 18:50:17 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@680f0bc9
-[18:50:50.390] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7cb75d94
-[18:50:59.113] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[18:50:59.209] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[18:50:59.287] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[18:50:59.311] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[18:51:01.105] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoardLinks(Pageable, PagedResourcesAssembler)
-[18:51:01.388] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[18:51:01.393] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [Resource { content: com.webatoz.backend.database.webatoz.board.Board@acacf (truncated)...]
-[18:51:01.592] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@7cb75d94, started on Wed Jun 17 18:50:50 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2ad17ba9
-[19:02:08.927] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@83005d8
-[19:02:17.366] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[19:02:17.461] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
-[19:02:17.538] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[19:02:17.557] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[19:02:19.285] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoardLinks(Pageable, PagedResourcesAssembler)
-[19:02:19.559] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
-[19:02:19.561] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [Resource { content: com.webatoz.backend.database.webatoz.board.Board@acacf (truncated)...]
-[19:02:19.725] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@83005d8, started on Wed Jun 17 19:02:08 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@56ea800e
+[18:12:48.150] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6dc0b925
+[18:12:58.769] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:12:58.995] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:12:59.083] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:12:59.107] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:13:00.676] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoardLinks(Pageable, PagedResourcesAssembler)
+[18:13:01.049] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:13:01.054] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [Resource { content: com.webatoz.backend.database.webatoz.board.Board@acacf (truncated)...]
+[18:13:01.620] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@6dc0b925, started on Sun Jul 26 18:12:48 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65cca28d
+[18:21:46.171] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:21:46.172] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 3618 ms
+[18:21:52.475] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:21:52.524] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:21:52.559] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:21:52.571] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:21:53.494] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[18:21:53.494] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[18:21:53.506] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[18:21:53.506] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 12 ms
+[18:31:04.516] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[18:31:04.523] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[18:31:04.987] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:31:04.988] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[18:31:05.027] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:11:46.731] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:11:46.731] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2054 ms
+[19:13:09.824] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:13:09.824] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1755 ms
+[19:13:49.258] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:13:49.258] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1784 ms
+[19:13:54.664] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:13:54.700] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:13:54.725] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:13:54.734] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:13:55.763] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:13:55.764] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:13:55.771] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:13:55.771] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 7 ms
+[19:13:59.227] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:13:59.231] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:13:59.352] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:13:59.352] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [], metadata: Metadata { number: 0, total pages: 0, total elements: 0, size (truncated)...]
+[19:13:59.373] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:14:30.235] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:14:30.235] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1662 ms
+[19:14:35.862] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:14:35.897] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:14:35.922] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:14:35.931] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:14:36.819] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:14:36.819] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:14:36.825] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:14:36.825] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 6 ms
+[19:14:49.961] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:14:49.965] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:14:50.107] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:14:50.116] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:14:50.116] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@63bfdc98]
+[19:14:50.126] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:14:50.129] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:15:50.182] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:15:50.182] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:15:50.231] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:15:50.231] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:15:50.232] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@82ea105]
+[19:15:50.233] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:15:50.233] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:16:31.063] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:16:31.063] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@cc9c088]
+[19:16:31.119] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:16:31.119] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:17:08.924] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:17:08.925] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1666 ms
+[19:17:13.961] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:17:13.995] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:17:14.019] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:17:14.029] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:17:14.882] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:17:14.883] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:17:14.893] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:17:14.893] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[19:17:41.785] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:17:41.791] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:17:41.947] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:17:41.948] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:17:41.984] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:20:00.652] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4881eb65
+[19:20:11.153] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:20:11.250] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:20:11.326] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:20:11.342] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:20:12.698] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:20:12.925] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:20:12.928] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:20:13.261] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@4881eb65, started on Sun Jul 26 19:20:00 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@240091dc
+[19:20:57.708] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@442428c8
+[19:21:07.724] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:21:07.795] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:21:07.856] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:21:07.873] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:21:09.165] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:21:09.407] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:21:09.410] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:21:09.717] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@442428c8, started on Sun Jul 26 19:20:57 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68fbe210
+[19:21:42.840] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3bc1e2ea
+[19:21:55.202] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:21:55.280] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:21:55.344] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:21:55.364] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:21:56.700] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:21:56.936] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:21:56.938] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:21:57.172] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@3bc1e2ea, started on Sun Jul 26 19:21:42 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2b732a20
