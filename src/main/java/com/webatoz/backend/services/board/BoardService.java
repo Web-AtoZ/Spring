@@ -3,6 +3,7 @@ package com.webatoz.backend.services.board;
 import com.webatoz.backend.database.webatoz.board.Board;
 import com.webatoz.backend.database.webatoz.board.BoardRepository;
 
+import com.webatoz.backend.database.webatoz.option.OptionRepository;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class BoardService {
 
   private final BoardRepository boardRepository;
+  private final OptionRepository optionRepository;
 
   @Transactional(readOnly = true)
   public Page<Board> getBoards(Pageable pageable) {
@@ -26,7 +28,7 @@ public class BoardService {
   @Transactional
   public Board createBoard(CreateBoardDomain boardDomain) {
     Board board = new Board();
-    board.setCreateData(boardDomain);
+    board.setCreateData(boardDomain, optionRepository.getOne(boardDomain.getOptionId()));
     return boardRepository.save(board);
   }
 }

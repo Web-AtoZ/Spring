@@ -1,47 +1,60 @@
 package com.webatoz.backend.database.webatoz.board;
 
+import com.webatoz.backend.database.webatoz.option.Option;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.annotations.Where;
 
 
 @Entity
 @Getter
-@EqualsAndHashCode
+@EqualsAndHashCode(of = "boardId", callSuper = false)
+//@Where(clause = "deleted_date = null")
 public class Board {
-    
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Integer boardId;
 
-  private String title;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer boardId;
 
-  private String content;
+    private String title;
 
-  private Integer views = 0;
-  
-  private Integer userId;
+    private String content;
 
-  private Integer optionId;
+    private Integer views = 0;
 
-  @CreationTimestamp
-  private LocalDateTime createdDate;
+    private Integer userId;
 
-  @UpdateTimestamp
-  private LocalDateTime updatedDate;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "optionId")
+    private Option option;
 
-  private LocalDateTime deletedDate;
-  
-  public void setCreateData(CreateBoardDomain createBoardDomain) {
-    this.title = createBoardDomain.getTitle();
-    this.content = createBoardDomain.getContent();
-    this.userId = createBoardDomain.getUserId();
-    this.createdDate = LocalDateTime.now();
-  }
+    @CreationTimestamp
+    private LocalDateTime createdDate;
+
+    @UpdateTimestamp
+    private LocalDateTime updatedDate;
+
+    private LocalDateTime deletedDate;
+
+
+    /**
+     * 게시글 등록
+     * @param createBoardDomain
+     */
+    public void setCreateData(CreateBoardDomain createBoardDomain, Option option) {
+        this.title = createBoardDomain.getTitle();
+        this.content = createBoardDomain.getContent();
+        this.userId = createBoardDomain.getUserId();
+        this.option = option;
+//        this.createdDate = LocalDateTime.now();
+    }
 }

@@ -1,0 +1,202 @@
+[source,options="nowrap"]
+----
+{
+  "_embedded" : {
+    "board" : [ {
+      "title" : "fsdsdz",
+      "content" : "<p>xc</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-23 00:00:00",
+      "updated_date" : "2020-04-23 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 8
+    }, {
+      "title" : "�벑濡� �뀒�뒪�듃�뀕",
+      "content" : "<p>�벑濡� �뀒�뒪�듃 ~~~~�뀑</p>",
+      "views" : null,
+      "option" : null,
+      "created_date" : null,
+      "updated_date" : null,
+      "deleted_date" : null,
+      "boardId" : 6
+    }, {
+      "title" : "�샇濡쒕·濡쒌뀑�뀕",
+      "content" : "<h1>�뀑</h1><p><br></p><p>�꽩</p><p><br></p><p>�뀑</p><p><br></p><p>�꽩</p><p><br></p><p><br></p><p><br></p><h3>�뀕</h3>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-23 00:00:00",
+      "updated_date" : "2020-04-23 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 12
+    }, {
+      "title" : "�뀕�뀕",
+      "content" : "<p>�뀕�뀕</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 19
+    }, {
+      "title" : "濡ㅽ넗泥댁뒪",
+      "content" : "<p>�옱諛뚮떦</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 21
+    }, {
+      "title" : "�젋�뜑留� 理쒖쟻�솕 �옒�븯怨좎떢�떎",
+      "content" : "<p>�뀑�뀪�뀑�뀑�뀑</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-23 00:00:00",
+      "updated_date" : "2020-04-23 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 14
+    }, {
+      "title" : "test",
+      "content" : "<h1>safsafasfasad</h1>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 22
+    }, {
+      "title" : "1234",
+      "content" : "<p>1234</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 23
+    }, {
+      "title" : "�뀋�뀋",
+      "content" : "<p>�뀋�뀋dd</p>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 20
+    }, {
+      "title" : "add",
+      "content" : "<h2><strong>add</strong></h2>",
+      "views" : 0,
+      "option" : {
+        "level" : 1,
+        "order" : 1,
+        "description" : "1",
+        "created_date" : "2020-07-26 00:00:00",
+        "updated_date" : null,
+        "deleted_date" : null,
+        "poption_id" : null,
+        "optionId" : 1
+      },
+      "created_date" : "2020-04-28 00:00:00",
+      "updated_date" : "2020-04-28 00:00:00",
+      "deleted_date" : null,
+      "boardId" : 24
+    } ]
+  },
+  "_links" : {
+    "first" : {
+      "href" : "https://webatoz.com/boards?page=0&size=10"
+    },
+    "self" : {
+      "href" : "https://webatoz.com/boards?page=0&size=10"
+    },
+    "next" : {
+      "href" : "https://webatoz.com/boards?page=1&size=10"
+    },
+    "last" : {
+      "href" : "https://webatoz.com/boards?page=1&size=10"
+    },
+    "profile" : {
+      "href" : "https://webatoz.com/boards/docs/index.html#resources-get-boards"
+    }
+  },
+  "page" : {
+    "size" : 10,
+    "total_elements" : 16,
+    "total_pages" : 2,
+    "number" : 0
+  }
+}
+----

@@ -1,0 +1,116 @@
+[18:12:48.150] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6dc0b925
+[18:12:58.769] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:12:58.995] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:12:59.083] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:12:59.107] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:13:00.676] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoardLinks(Pageable, PagedResourcesAssembler)
+[18:13:01.049] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:13:01.054] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [Resource { content: com.webatoz.backend.database.webatoz.board.Board@acacf (truncated)...]
+[18:13:01.620] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@6dc0b925, started on Sun Jul 26 18:12:48 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65cca28d
+[18:21:46.171] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:21:46.172] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 3618 ms
+[18:21:52.475] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:21:52.524] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:21:52.559] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:21:52.571] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:21:53.494] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[18:21:53.494] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[18:21:53.506] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[18:21:53.506] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 12 ms
+[18:31:04.516] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[18:31:04.523] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[18:31:04.987] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:31:04.988] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[18:31:05.027] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:11:46.731] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:11:46.731] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2054 ms
+[19:13:09.824] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:13:09.824] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1755 ms
+[19:13:49.258] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:13:49.258] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1784 ms
+[19:13:54.664] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:13:54.700] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:13:54.725] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:13:54.734] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:13:55.763] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:13:55.764] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:13:55.771] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:13:55.771] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 7 ms
+[19:13:59.227] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:13:59.231] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:13:59.352] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:13:59.352] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [], metadata: Metadata { number: 0, total pages: 0, total elements: 0, size (truncated)...]
+[19:13:59.373] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:14:30.235] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:14:30.235] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1662 ms
+[19:14:35.862] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:14:35.897] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:14:35.922] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:14:35.931] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:14:36.819] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:14:36.819] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:14:36.825] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:14:36.825] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 6 ms
+[19:14:49.961] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:14:49.965] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:14:50.107] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:14:50.116] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:14:50.116] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@63bfdc98]
+[19:14:50.126] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:14:50.129] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:15:50.182] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:15:50.182] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:15:50.231] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:15:50.231] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:15:50.232] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@82ea105]
+[19:15:50.233] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:15:50.233] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:16:31.063] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:16:31.063] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:16:31.118] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@cc9c088]
+[19:16:31.119] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [javax.persistence.EntityNotFoundException: Unable to find com.webatoz.backend.database.webatoz.option.Option with id 1]
+[19:16:31.119] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:17:08.924] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:17:08.925] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1666 ms
+[19:17:13.961] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:17:13.995] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:17:14.019] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:17:14.029] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:17:14.882] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:17:14.883] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:17:14.893] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:17:14.893] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[19:17:41.785] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards", parameters={}
+[19:17:41.791] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:17:41.947] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:17:41.948] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:17:41.984] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[19:20:00.652] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4881eb65
+[19:20:11.153] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:20:11.250] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:20:11.326] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:20:11.342] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:20:12.698] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:20:12.925] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:20:12.928] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:20:13.261] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@4881eb65, started on Sun Jul 26 19:20:00 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@240091dc
+[19:20:57.708] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@442428c8
+[19:21:07.724] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:21:07.795] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:21:07.856] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:21:07.873] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:21:09.165] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:21:09.407] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:21:09.410] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:21:09.717] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@442428c8, started on Sun Jul 26 19:20:57 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68fbe210
+[19:21:42.840] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3bc1e2ea
+[19:21:55.202] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:21:55.280] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 15 mappings in 'requestMappingHandlerMapping'
+[19:21:55.344] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:21:55.364] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:21:56.700] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(Pageable, PagedResourcesAssembler)
+[19:21:56.936] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [application/hal+json] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[19:21:56.938] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[19:21:57.172] [DEBUG] | o.s.w.c.s.GenericWebApplicationContext | Closing org.springframework.web.context.support.GenericWebApplicationContext@3bc1e2ea, started on Sun Jul 26 19:21:42 KST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2b732a20

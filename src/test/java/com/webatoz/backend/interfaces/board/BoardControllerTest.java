@@ -37,7 +37,7 @@ public class BoardControllerTest {
   private MockMvc mockMvc;
 
   @Test
-  public void getBoards() throws Exception {
+  public void getBoard() throws Exception {
     mockMvc.perform(
         get("/boards")
             .contentType(MediaType.APPLICATION_JSON_UTF8)
@@ -45,7 +45,7 @@ public class BoardControllerTest {
     )
         .andDo(print())
         .andExpect(status().isOk())
-        .andDo(document("get-boards",
+        .andDo(document("get-board",
             requestHeaders(
                 headerWithName("Content-Type").description("application/json"),
                 headerWithName("Accept").description("application/hal+json")
@@ -64,14 +64,28 @@ public class BoardControllerTest {
                 linkWithRel("last").description("The last page of results").optional()
             ),
             relaxedResponseFields(
-                fieldWithPath("_embedded.boards").description("list of board"),
-                fieldWithPath("_embedded.boards[].id").description("id"),
-                fieldWithPath("_embedded.boards[].title").description("title"),
-                fieldWithPath("_embedded.boards[].created_date").description("created_date")
+                fieldWithPath("_embedded.board").description("list of board"),
+                fieldWithPath("_embedded.board[].boardId").description("id").optional(),
+                fieldWithPath("_embedded.board[].title").description("title").optional(),
+                fieldWithPath("_embedded.board[].content").description("content").optional(),
+                fieldWithPath("_embedded.board[].views").description("views").optional(),
+
+                fieldWithPath("_embedded.board[].option").description("option").optional(),
+                fieldWithPath("_embedded.board[].option.optionId").description("option id").optional(),
+                fieldWithPath("_embedded.board[].option.level").description("option level").optional(),
+                fieldWithPath("_embedded.board[].option.order").description("option order").optional(),
+                fieldWithPath("_embedded.board[].option.description").description("option description").optional(),
+                fieldWithPath("_embedded.board[].option.poption_id").description("option poption_id").optional(),
+                fieldWithPath("_embedded.board[].option.created_date").description("option created_date").optional(),
+                fieldWithPath("_embedded.board[].option.updated_date").description("option updated_date").optional(),
+                fieldWithPath("_embedded.board[].option.deleted_date").description("option deleted_date").optional(),
+
+
+                fieldWithPath("_embedded.board[].created_date").description("created_date")
                     .optional(),
-                fieldWithPath("_embedded.boards[].updated_date").description("updated_date")
+                fieldWithPath("_embedded.board[].updated_date").description("updated_date")
                     .optional(),
-                fieldWithPath("_embedded.boards[].deleted_date").description("deleted_date")
+                fieldWithPath("_embedded.board[].deleted_date").description("deleted_date")
                     .optional(),
                 fieldWithPath("page.size").description("elements size per page"),
                 fieldWithPath("page.total_elements").description("total element count of results"),

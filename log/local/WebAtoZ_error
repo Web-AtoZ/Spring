@@ -1,0 +1,27 @@
+[17:33:07.751] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[17:33:40.202] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[17:33:53.701] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 15.031 seconds (JVM running for 16.616)
+[17:34:16.610] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[17:34:28.403] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 13.061 seconds (JVM running for 14.444)
+[18:32:18.025] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:32:28.119] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 11.535 seconds (JVM running for 13.104)
+[18:34:39.729] [INFO ] | c.webatoz.backend.WebatozApplication | No active profile set, falling back to default profiles: default
+[18:34:48.121] [INFO ] | c.webatoz.backend.WebatozApplication | Started WebatozApplication in 9.359 seconds (JVM running for 10.323)
+[18:37:24.543] [INFO ] | c.webatoz.backend.WebatozApplication | No active profile set, falling back to default profiles: default
+[18:37:28.017] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:37:30.693] [INFO ] | c.webatoz.backend.WebatozApplication | Started WebatozApplication in 6.67 seconds (JVM running for 172.895)
+[18:37:39.151] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 12.413 seconds (JVM running for 13.759)
+[18:38:04.343] [INFO ] | c.webatoz.backend.WebatozApplication | No active profile set, falling back to default profiles: default
+[18:38:07.010] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:38:10.404] [INFO ] | c.webatoz.backend.WebatozApplication | Started WebatozApplication in 6.269 seconds (JVM running for 212.606)
+[18:38:18.222] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 12.427 seconds (JVM running for 13.762)
+[18:39:10.425] [INFO ] | c.webatoz.backend.WebatozApplication | No active profile set, falling back to default profiles: default
+[18:39:13.112] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:39:18.044] [INFO ] | c.webatoz.backend.WebatozApplication | Started WebatozApplication in 7.907 seconds (JVM running for 280.246)
+[18:39:26.159] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 14.222 seconds (JVM running for 15.61)
+[18:50:17.981] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:50:28.696] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 12.707 seconds (JVM running for 14.238)
+[18:50:50.324] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[18:51:00.882] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 12.02 seconds (JVM running for 14.201)
+[19:02:08.922] [INFO ] | c.w.b.interfaces.BoardControllerTest | No active profile set, falling back to default profiles: default
+[19:02:19.086] [INFO ] | c.w.b.interfaces.BoardControllerTest | Started BoardControllerTest in 11.477 seconds (JVM running for 12.78)
