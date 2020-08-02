@@ -31,7 +31,7 @@ public class CollectMenuService {
     private final RestaurantService restaurantService;
 
     @PostConstruct
-    public void getKoreaCovidDatas() throws IOException {
+    public void testMethod() throws IOException {
 
         Document doc = Jsoup.connect(testURL).get();
         Elements menuAreaDIV = doc.select("div.txt_menu_area");
@@ -71,6 +71,9 @@ public class CollectMenuService {
 
                 // 식당 url 추출
                 String restaurantURL = restaurants.toString(); // 임시로 넣어둠
+
+                // 식당 url 빈값 이거나 null인 경우 url 호출 x
+                if (restaurantURL.isEmpty() || restaurantURL == null) continue;
 
                 // 레스토랑 url로 크롤링 시작하여 메뉴정보 얻어오기
                 List<Menu> menus = getMenusByCrawling(testURL);
