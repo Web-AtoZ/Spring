@@ -21,6 +21,6 @@ public class CreateBoardDomain {
 
   private Integer userId;
 
-  private Integer optionId;
+  private Integer categoryId;
 
 }

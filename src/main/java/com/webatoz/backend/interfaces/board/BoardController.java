@@ -50,10 +50,11 @@ public class BoardController extends BaseController {
     return new ResponseEntity(responseResource, HttpStatus.CREATED);
   }
 
-  // 목록 조회 (커스텀)
+  // 목록 조회
   @GetMapping
   public ResponseEntity getBoards(
-      @PageableDefault(size = 10) Pageable pageable, PagedResourcesAssembler<Board> assembler) {
+      @PageableDefault(size = 10) Pageable pageable,
+      PagedResourcesAssembler<Board> assembler) {
     Page<Board> boards = boardService.getBoards(pageable);
 
     PagedModel<BoardModel> pagedModel = assembler.toModel(boards, BoardModel::new);
@@ -65,4 +66,24 @@ public class BoardController extends BaseController {
 
     return ResponseEntity.ok().body(pagedModel);
   }
+
+  // 상세 조회
+  @GetMapping("/{no}")
+  public ResponseEntity getBoards(@PathVariable("no") Integer boardNo) {
+    Board result = boardService.getBoard(boardNo);
+
+    Link selfLink =
+            linkTo(methodOn(BoardController.class).getBoards(boardNo)).withSelfRel();
+    Link profileLink =
+            linkTo(BoardController.class)
+                    .slash("/docs/index.html#resources-get-board")
+                    .withRel("profile");
+
+    ResponseModel responseResource =
+            successResponseModel("board", new BoardModel(result), selfLink, profileLink);
+
+    return new ResponseEntity(responseResource, HttpStatus.OK);
+  }
+
+
 }

@@ -1,6 +1,8 @@
 package com.webatoz.backend.database.webatoz.board;
 
+import com.webatoz.backend.database.webatoz.category.Category;
 import com.webatoz.backend.database.webatoz.option.Option;
+import com.webatoz.backend.database.webatoz.user.Users;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -31,11 +33,13 @@ public class Board {
 
     private Integer views = 0;
 
-    private Integer userId;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId")
+    private Users user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "optionId")
-    private Option option;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "categoryId")
+    private Category category;
 
     @CreationTimestamp
     private LocalDateTime createdDate;
@@ -50,11 +54,11 @@ public class Board {
      * 게시글 등록
      * @param createBoardDomain
      */
-    public void setCreateData(CreateBoardDomain createBoardDomain, Option option) {
+    public void setCreateData(CreateBoardDomain createBoardDomain, Users user, Category category) {
         this.title = createBoardDomain.getTitle();
         this.content = createBoardDomain.getContent();
-        this.userId = createBoardDomain.getUserId();
-        this.option = option;
-//        this.createdDate = LocalDateTime.now();
+        this.user = user;
+        this.category = category;
+        this.createdDate = LocalDateTime.now();
     }
 }
