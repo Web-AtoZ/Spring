@@ -20,7 +20,8 @@ public class BoardModel extends RepresentationModel<BoardModel> {
   private final String content;
   private final Integer views;
 
-  private final OptionModel option;
+  private final UserModel user;
+  private final CategoryModel category;
 
   @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
   private final LocalDateTime createdDate;
@@ -39,6 +40,7 @@ public class BoardModel extends RepresentationModel<BoardModel> {
     this.createdDate = board.getCreatedDate();
     this.updatedDate = board.getUpdatedDate();
     this.deletedDate = board.getDeletedDate();
-    this.option = board.getOption() != null ? new OptionModel(board.getOption()) : null;
+    this.user = new UserModel(board.getUser());
+    this.category = board.getCategory() != null ? new CategoryModel(board.getCategory()) : null;
   }
 }
