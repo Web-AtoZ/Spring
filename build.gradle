@@ -122,7 +122,7 @@ dependencies {
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version: '2.1.2.RELEASE'
 
 	// test
-//	asciidoctor 'org.springframework.restdocs:spring-restdocs-asciidoctor:2.0.3.RELEASE'
+	asciidoctor 'org.springframework.restdocs:spring-restdocs-asciidoctor:2.0.3.RELEASE'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
 

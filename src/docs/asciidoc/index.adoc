@@ -1,5 +1,5 @@
 = RESTful Notes API Guide
-Andy Wilkinson;
+Web AtoZ;
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
