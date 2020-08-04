@@ -1,6 +1,7 @@
 package com.webatoz.backend.interfaces.board;
 
 import com.webatoz.backend.database.webatoz.board.Board;
+import com.webatoz.backend.domain.board.BoardSearchDomain;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import com.webatoz.backend.domain.response.BoardModel;
 import com.webatoz.backend.domain.response.ResponseModel;
@@ -29,61 +30,62 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 @Slf4j
 public class BoardController extends BaseController {
 
-  private final BoardService boardService;
+    private final BoardService boardService;
 
-  // 등록
-  @PostMapping
-  public ResponseEntity createBoard(@Valid @RequestBody CreateBoardDomain createBoardDomain) {
+    // 등록
+    @PostMapping
+    public ResponseEntity createBoard(@Valid @RequestBody CreateBoardDomain createBoardDomain) {
 
-    Board createResult = boardService.createBoard(createBoardDomain);
+        Board createResult = boardService.createBoard(createBoardDomain);
 
-    Link selfLink =
-        linkTo(methodOn(BoardController.class).createBoard(createBoardDomain)).withSelfRel();
-    Link profileLink =
-        linkTo(BoardController.class)
-            .slash("/docs/index.html#resources-create-board")
-            .withRel("profile");
+        Link selfLink =
+                linkTo(methodOn(BoardController.class).createBoard(createBoardDomain)).withSelfRel();
+        Link profileLink =
+                linkTo(BoardController.class)
+                        .slash("/docs/index.html#resources-create-board")
+                        .withRel("profile");
 
-    ResponseModel responseResource =
-        successResponseModel("board", new BoardModel(createResult), selfLink, profileLink);
+        ResponseModel responseResource =
+                successResponseModel("board", new BoardModel(createResult), selfLink, profileLink);
 
-    return new ResponseEntity(responseResource, HttpStatus.CREATED);
-  }
+        return new ResponseEntity(responseResource, HttpStatus.CREATED);
+    }
 
-  // 목록 조회
-  @GetMapping
-  public ResponseEntity getBoards(
-      @PageableDefault(size = 10) Pageable pageable,
-      PagedResourcesAssembler<Board> assembler) {
-    Page<Board> boards = boardService.getBoards(pageable);
+    // 목록 조회
+    @GetMapping
+    public ResponseEntity getBoards(
+            BoardSearchDomain boardSearchDomain,
+            @PageableDefault(size = 10) Pageable pageable,
+            PagedResourcesAssembler<Board> assembler) {
+        Page<Board> boards = boardService.getBoards(boardSearchDomain, pageable);
 
-    PagedModel<BoardModel> pagedModel = assembler.toModel(boards, BoardModel::new);
+        PagedModel<BoardModel> pagedModel = assembler.toModel(boards, BoardModel::new);
 
-    pagedModel.add(
-        linkTo(BoardController.class)
-            .slash("/docs/index.html#resources-get-boards")
-            .withRel("profile"));
+        pagedModel.add(
+                linkTo(BoardController.class)
+                        .slash("/docs/index.html#resources-get-boards")
+                        .withRel("profile"));
 
-    return ResponseEntity.ok().body(pagedModel);
-  }
+        return ResponseEntity.ok().body(pagedModel);
+    }
 
-  // 상세 조회
-  @GetMapping("/{no}")
-  public ResponseEntity getBoards(@PathVariable("no") Integer boardNo) {
-    Board result = boardService.getBoard(boardNo);
+    // 상세 조회
+    @GetMapping("/{no}")
+    public ResponseEntity getBoards(@PathVariable("no") Integer boardNo) {
+        Board result = boardService.getBoard(boardNo);
 
-    Link selfLink =
-            linkTo(methodOn(BoardController.class).getBoards(boardNo)).withSelfRel();
-    Link profileLink =
-            linkTo(BoardController.class)
-                    .slash("/docs/index.html#resources-get-board")
-                    .withRel("profile");
+        Link selfLink =
+                linkTo(methodOn(BoardController.class).getBoards(boardNo)).withSelfRel();
+        Link profileLink =
+                linkTo(BoardController.class)
+                        .slash("/docs/index.html#resources-get-board")
+                        .withRel("profile");
 
-    ResponseModel responseResource =
-            successResponseModel("board", new BoardModel(result), selfLink, profileLink);
+        ResponseModel responseResource =
+                successResponseModel("board", new BoardModel(result), selfLink, profileLink);
 
-    return new ResponseEntity(responseResource, HttpStatus.OK);
-  }
+        return new ResponseEntity(responseResource, HttpStatus.OK);
+    }
 
 
 }

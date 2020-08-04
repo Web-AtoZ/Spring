@@ -8,6 +8,7 @@ import com.webatoz.backend.database.webatoz.category.CategoryRepository;
 import com.webatoz.backend.database.webatoz.option.OptionRepository;
 import com.webatoz.backend.database.webatoz.user.UserRepository;
 import com.webatoz.backend.database.webatoz.user.Users;
+import com.webatoz.backend.domain.board.BoardSearchDomain;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import com.webatoz.backend.global.error.exeption.NotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -26,8 +27,8 @@ public class BoardService {
   private final UserRepository userRepository;
 
   @Transactional(readOnly = true)
-  public Page<Board> getBoards(Pageable pageable) {
-    Page<Board> boards = boardRepository.findAll(pageable);
+  public Page<Board> getBoards(BoardSearchDomain boardSearchDomain, Pageable pageable) {
+    Page<Board> boards = boardRepository.findAllBySearch(boardSearchDomain, pageable);
     return boards;
   }
 

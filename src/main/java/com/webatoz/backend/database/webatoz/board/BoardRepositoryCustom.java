@@ -1,6 +1,9 @@
 package com.webatoz.backend.database.webatoz.board;
 
-public interface BoardRepositoryCustom {
+import com.webatoz.backend.domain.board.BoardSearchDomain;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-  String function();
+public interface BoardRepositoryCustom {
+  Page<Board> findAllBySearch(BoardSearchDomain boardSearchDomain, Pageable pageable);
 }
