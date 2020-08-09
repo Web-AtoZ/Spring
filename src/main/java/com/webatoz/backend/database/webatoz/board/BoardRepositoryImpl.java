@@ -4,7 +4,7 @@ import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.webatoz.backend.database.webatoz.category.QCategory;
 import com.webatoz.backend.database.webatoz.common.ExpressionUtil;
-import com.webatoz.backend.database.webatoz.user.QUsers;
+import com.webatoz.backend.database.webatoz.users.QUsers;
 import com.webatoz.backend.domain.board.BoardSearchDomain;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
