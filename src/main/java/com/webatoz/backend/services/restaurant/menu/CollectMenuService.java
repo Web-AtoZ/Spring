@@ -10,6 +10,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,12 +33,14 @@ public class CollectMenuService {
 
     private final RestaurantService restaurantService;
 
-    @PostConstruct
-    public void testMethod() throws IOException {
-
+//    @PostConstruct
+    public List<Menu> testMethod() throws IOException {
         Document doc = Jsoup.connect(testURL).get();
-        Elements menuAreaDIV = doc.select("div.txt_menu_area");
 
+        List<Menu> menus = new ArrayList<>();
+
+        // HTML 소스코드에서 메뉴이름 및 가격 추출하여 리스트에 저장
+        Elements menuAreaDIV = doc.select("div.txt_menu_area");
         Iterator<Element> menuListDIV = menuAreaDIV.select("ul.list_txt_menu").iterator();
 
         while (menuListDIV.hasNext()) {
@@ -54,13 +59,15 @@ public class CollectMenuService {
 
                 menu.setPrice(menuPrice);
                 menu.setName(menuName);
-                System.out.println(menu.toString());
+                menus.add(menu);
             }
         }
+
+        return menus;
     }
 
+    @PostConstruct
 //    @Scheduled(cron = "10 * * * * *") // 임시로 매분 10초로 지정
-    @Transactional
     public void collectRestaurantMenu() {
         // 식당 url목록 가져오기
         List<Restaurant> restaurants = getRestaurants();
@@ -69,8 +76,11 @@ public class CollectMenuService {
             // 조회한 각 식당 객체의 url을 이용해 크롤링 및 메뉴 데이터 저장
             for (Restaurant restaurant : restaurants) {
 
-                // 식당 url 추출
-                String restaurantURL = restaurants.toString(); // 임시로 넣어둠
+//                int restaurantId = restaurant.getRestaurantId();
+                String restaurantId = "38009643";
+
+                // 식당 url 얻기
+                String restaurantURL = getRestaurantURLById(restaurantId);
 
                 // 식당 url 빈값 이거나 null인 경우 url 호출 x
                 if (restaurantURL.isEmpty() || restaurantURL == null) continue;
@@ -83,7 +93,7 @@ public class CollectMenuService {
                     menu.setRestaurantId(restaurant.getRestaurantId());
 
                     // menu insert 실행
-                    collectMenuRepository.insertMenu(menu);
+                    collectMenuRepository.save(menu);
                 }
             }
         } catch (IOException ioe) {
@@ -93,13 +103,22 @@ public class CollectMenuService {
         }
     }
 
+    private String getRestaurantURLById(String restaurantId) {
+
+        String preFixURL = "https://store.naver.com/restaurants/detail?id=";
+        String surFixURL = "&tab=menu#_tab";
+
+        return restaurantId == null || restaurantId.isEmpty() ?
+                null : preFixURL+ restaurantId +surFixURL;
+
+    }
+
     private List<Restaurant> getRestaurants() {
         Restaurant restaurant = new Restaurant();
-
         // 식당리스트 가져오기
-        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, null);
+        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, PageRequest.of(10, 1));
 
-        return null;
+        return restaurants.getContent();
     }
 
     /**
