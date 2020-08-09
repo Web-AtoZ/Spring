@@ -5,6 +5,7 @@ import com.webatoz.backend.database.webatoz.restaurant.menu.CollectMenuRepositor
 import com.webatoz.backend.database.webatoz.restaurant.menu.Menu;
 import com.webatoz.backend.services.restaurant.RestaurantService;
 import lombok.RequiredArgsConstructor;
+import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -27,44 +28,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CollectMenuService {
 
-    final String testURL = "https://store.naver.com/restaurants/detail?entry=pll&id=1918745789&query=%EC%8B%A0%EB%A6%BC%20%EB%A7%9B%EC%A7%91";
+    final String testURL = "https://store.naver.com/restaurants/detail?id=215016734&tab=menu";
 
     private final CollectMenuRepository collectMenuRepository;
 
     private final RestaurantService restaurantService;
-
-//    @PostConstruct
-    public List<Menu> testMethod() throws IOException {
-        Document doc = Jsoup.connect(testURL).get();
-
-        List<Menu> menus = new ArrayList<>();
-
-        // HTML 소스코드에서 메뉴이름 및 가격 추출하여 리스트에 저장
-        Elements menuAreaDIV = doc.select("div.txt_menu_area");
-        Iterator<Element> menuListDIV = menuAreaDIV.select("ul.list_txt_menu").iterator();
-
-        while (menuListDIV.hasNext()) {
-            Iterator<Element> menuListItems = menuListDIV.next().select("li.list_item").iterator();
-            while (menuListItems.hasNext()) {
-                Element menuItem = menuListItems.next();
-                Menu menu = new Menu();
-                int menuPrice = Integer.parseInt(
-                        menuItem.select("div.price")
-                                .text()
-                                .replace(",","")
-                                .replace("원","")
-                );
-
-                String menuName = menuItem.select("div.tit").text();
-
-                menu.setPrice(menuPrice);
-                menu.setName(menuName);
-                menus.add(menu);
-            }
-        }
-
-        return menus;
-    }
 
     @PostConstruct
 //    @Scheduled(cron = "10 * * * * *") // 임시로 매분 10초로 지정
@@ -86,7 +54,7 @@ public class CollectMenuService {
                 if (restaurantURL.isEmpty() || restaurantURL == null) continue;
 
                 // 레스토랑 url로 크롤링 시작하여 메뉴정보 얻어오기
-                List<Menu> menus = getMenusByCrawling(testURL);
+                List<Menu> menus = getMenusByCrawling(restaurantURL);
                 
                 for (Menu menu : menus) {
                     // menu 객체에 식당 id 저장
@@ -116,7 +84,7 @@ public class CollectMenuService {
     private List<Restaurant> getRestaurants() {
         Restaurant restaurant = new Restaurant();
         // 식당리스트 가져오기
-        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, PageRequest.of(10, 1));
+        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, PageRequest.of(1, 10));
 
         return restaurants.getContent();
     }
@@ -127,7 +95,8 @@ public class CollectMenuService {
      * */
     private List<Menu> getMenusByCrawling(String restaurantURL) throws IOException {
 
-        Document doc = Jsoup.connect(testURL).get();
+        Connection connection = Jsoup.connect(testURL);
+        Document doc = connection.get();
 
         List<Menu> menus = new ArrayList<>();
 
