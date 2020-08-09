@@ -191,3 +191,79 @@
 [20:52:04.327] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
 [20:52:04.333] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 [20:52:04.334] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 7 ms
+[21:06:22.881] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[21:06:22.882] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2270 ms
+[21:06:27.497] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[21:06:27.546] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[21:06:27.582] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[21:06:27.594] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[21:08:16.305] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[21:08:16.306] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2175 ms
+[21:08:20.917] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[21:08:20.958] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[21:08:20.988] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[21:08:20.998] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[21:08:45.838] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[21:08:45.838] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2302 ms
+[21:08:50.412] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[21:08:50.454] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[21:08:50.485] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[21:08:50.494] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[21:08:51.257] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[21:08:51.259] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[21:08:51.267] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[21:08:51.267] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[22:36:33.449] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[22:36:33.449] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2128 ms
+[22:36:38.202] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[22:36:38.244] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[22:36:38.277] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[22:36:38.288] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[22:44:46.299] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[22:44:46.299] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2186 ms
+[22:44:51.014] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[22:44:51.057] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[22:44:51.092] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[22:44:51.102] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[22:44:52.441] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[22:44:52.442] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[22:44:52.450] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[22:44:52.450] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[23:05:16.022] [DEBUG] | o.s.web.servlet.DispatcherServlet | POST "/ws/v1/cluster/apps/new-application", parameters={}
+[23:05:16.027] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:05:16.032] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+[23:05:16.032] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+[23:05:16.039] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for POST "/error", parameters={}
+[23:05:16.040] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[23:05:16.057] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[23:05:16.057] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Sun Aug 09 23:05:16 KST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[23:05:16.069] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
+[23:06:58.835] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:06:58.836] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2303 ms
+[23:07:03.581] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:07:03.623] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[23:07:03.654] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:07:03.664] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:07:04.344] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:07:04.345] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:07:04.353] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:07:04.353] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[23:09:41.987] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:09:41.988] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2206 ms
+[23:09:46.834] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:09:46.879] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[23:09:46.910] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:09:46.919] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:09:48.081] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:09:48.082] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:09:48.089] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:09:48.089] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[23:13:11.338] [DEBUG] | o.s.web.servlet.DispatcherServlet | POST "/ws/v1/cluster/apps/new-application", parameters={}
+[23:13:11.343] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[23:13:11.348] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+[23:13:11.348] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+[23:13:11.356] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for POST "/error", parameters={}
+[23:13:11.357] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[23:13:11.374] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[23:13:11.374] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Sun Aug 09 23:13:11 KST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[23:13:11.387] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404

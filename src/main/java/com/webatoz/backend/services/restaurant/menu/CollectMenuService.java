@@ -27,7 +27,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CollectMenuService {
 
-    final String testURL = "https://store.naver.com/restaurants/detail?id=38009643&tab=menu#_tab";
+    final String testURL = "https://store.naver.com/restaurants/detail?entry=pll&id=1918745789&query=%EC%8B%A0%EB%A6%BC%20%EB%A7%9B%EC%A7%91";
 
     private final CollectMenuRepository collectMenuRepository;
 
