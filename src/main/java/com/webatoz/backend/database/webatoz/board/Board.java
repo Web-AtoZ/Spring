@@ -1,20 +1,16 @@
 package com.webatoz.backend.database.webatoz.board;
 
 import com.webatoz.backend.database.webatoz.category.Category;
-import com.webatoz.backend.database.webatoz.option.Option;
-import com.webatoz.backend.database.webatoz.user.Users;
+import com.webatoz.backend.database.webatoz.users.Users;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.hibernate.annotations.Where;
 
 
 @Entity

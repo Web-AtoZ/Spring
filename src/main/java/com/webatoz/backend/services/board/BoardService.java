@@ -5,9 +5,9 @@ import com.webatoz.backend.database.webatoz.board.BoardRepository;
 
 import com.webatoz.backend.database.webatoz.category.Category;
 import com.webatoz.backend.database.webatoz.category.CategoryRepository;
-import com.webatoz.backend.database.webatoz.option.OptionRepository;
-import com.webatoz.backend.database.webatoz.user.UserRepository;
-import com.webatoz.backend.database.webatoz.user.Users;
+import com.webatoz.backend.database.webatoz.users.UsersRepository;
+import com.webatoz.backend.database.webatoz.users.Users;
+import com.webatoz.backend.domain.board.BoardSearchDomain;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
 import com.webatoz.backend.global.error.exeption.NotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -23,11 +23,11 @@ public class BoardService {
 
   private final BoardRepository boardRepository;
   private final CategoryRepository categoryRepository;
-  private final UserRepository userRepository;
+  private final UsersRepository usersRepository;
 
   @Transactional(readOnly = true)
-  public Page<Board> getBoards(Pageable pageable) {
-    Page<Board> boards = boardRepository.findAll(pageable);
+  public Page<Board> getBoards(BoardSearchDomain boardSearchDomain, Pageable pageable) {
+    Page<Board> boards = boardRepository.findAllBySearch(boardSearchDomain, pageable);
     return boards;
   }
 
@@ -39,7 +39,7 @@ public class BoardService {
   @Transactional
   public Board createBoard(CreateBoardDomain boardDomain) {
     Board board = new Board();
-    Users user = userRepository.getOne(boardDomain.getUserId());
+    Users user = usersRepository.getOne(boardDomain.getUserId());
     if (user == null) throw new NotFoundException("user does not exist.");
     Category category = categoryRepository.getOne(boardDomain.getCategoryId());
     if (category == null) throw new NotFoundException("category does not exist.");
