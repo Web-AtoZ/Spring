@@ -10,10 +10,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.*;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,18 +41,18 @@ public class CollectMenuService {
             // 조회한 각 식당 객체의 url을 이용해 크롤링 및 메뉴 데이터 저장
             for (Restaurant restaurant : restaurants) {
 
-//                int restaurantId = restaurant.getRestaurantId();
-                String restaurantId = "38009643";
+                String restaurantPlaceId = restaurant.getPlaceId();
+//                String restaurantId = "38009643";
 
                 // 식당 url 얻기
-                String restaurantURL = getRestaurantURLById(restaurantId);
+                String restaurantURL = getRestaurantURLById(restaurantPlaceId);
 
                 // 식당 url 빈값 이거나 null인 경우 url 호출 x
-                if (restaurantURL.isEmpty() || restaurantURL == null) continue;
+                if (restaurantURL == null || restaurantURL.isEmpty()) continue;
 
                 // 레스토랑 url로 크롤링 시작하여 메뉴정보 얻어오기
                 List<Menu> menus = getMenusByCrawling(restaurantURL);
-                
+
                 for (Menu menu : menus) {
                     // menu 객체에 식당 id 저장
                     menu.setRestaurantId(restaurant.getRestaurantId());
@@ -84,7 +81,7 @@ public class CollectMenuService {
     private List<Restaurant> getRestaurants() {
         Restaurant restaurant = new Restaurant();
         // 식당리스트 가져오기
-        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, PageRequest.of(1, 10));
+        Page<Restaurant> restaurants = restaurantService.getRestaurants(restaurant, PageRequest.of(0, 10, Sort.by("restaurantId")));
 
         return restaurants.getContent();
     }
@@ -95,7 +92,7 @@ public class CollectMenuService {
      * */
     private List<Menu> getMenusByCrawling(String restaurantURL) throws IOException {
 
-        Connection connection = Jsoup.connect(testURL);
+        Connection connection = Jsoup.connect(restaurantURL);
         Document doc = connection.get();
 
         List<Menu> menus = new ArrayList<>();
@@ -109,12 +106,13 @@ public class CollectMenuService {
             while (menuListItems.hasNext()) {
                 Element menuItem = menuListItems.next();
                 Menu menu = new Menu();
-                int menuPrice = Integer.parseInt(
+                String menuPriceString =
                         menuItem.select("div.price")
-                                .text()
-                                .replace(",","")
-                                .replace("원","")
-                );
+                        .text()
+                        .replace(",","")
+                        .replace("원","");
+                menuPriceString = "".equals(menuPriceString) ? "0" : menuPriceString;
+                int menuPrice = Integer.parseInt(menuPriceString);
 
                 String menuName = menuItem.select("div.tit").text();
 

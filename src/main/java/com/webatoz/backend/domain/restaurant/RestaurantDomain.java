@@ -45,7 +45,6 @@ public class RestaurantDomain extends RepresentationModel<RestaurantDomain> {
     this.lng = restaurant.getLng();
     this.lat = restaurant.getLat();
     this.optionId = restaurant.getOptionId();
-    this.boardId = restaurant.getBoardId();
     this.roadAddress = restaurant.getRoadAddress();
     this.phone = restaurant.getPhone();
     this.mapx = restaurant.getMapx();

@@ -14,25 +14,25 @@ import lombok.*;
 @AllArgsConstructor
 public class Restaurant {
 
-  @Id
-  private Integer restaurantId;
-  private String name;
-  private LocalDate createdDate;
-  private LocalDate updatedDate;
-  private LocalDate deletedDate;
-  private String address;
-  private Double lng;
-  private Double lat;
-  private Integer optionId;
-  private Integer boardId;
-  private String roadAddress;
-  private String optionName;
-  private String phone;
-  private String mapx;
-  private String mapy;
+    @Id
+    private Integer restaurantId;
+    private String name;
+    private LocalDate createdDate;
+    private LocalDate updatedDate;
+    private LocalDate deletedDate;
+    private String address;
+    private Double lng;
+    private Double lat;
+    private Integer optionId;
+    private String roadAddress;
+    private String optionName;
+    private String phone;
+    private String mapx;
+    private String mapy;
+    private String placeId;
 
-  public Restaurant(String name, String optionName) {
-    this.name = name;
-    this.optionName = optionName;
-  }
+    public Restaurant(String name, String optionName) {
+        this.name = name;
+        this.optionName = optionName;
+    }
 }
