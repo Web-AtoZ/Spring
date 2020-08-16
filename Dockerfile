@@ -17,4 +17,4 @@ ARG DBKEY=test
 ADD ${JAR_FILE} springboot-webatoz.jar
 
 # Run the jar file
-ENTRYPOINT ["java", "-Ddbkey=$DBKEY","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-webatoz.jar"]
+ENTRYPOINT ["java", "-Ddbkey=${DBKEY}","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-webatoz.jar"]
