@@ -17,7 +17,4 @@ ARG JAR_FILE=Spring/build/libs/springboot-webatoz-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} springboot-webatoz.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-webatoz.jar"]
-
-
-# test 
+ENTRYPOINT ["java", "Ddbkey=${DBKEY}","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-webatoz.jar"]
