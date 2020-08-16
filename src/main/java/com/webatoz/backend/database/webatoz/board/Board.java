@@ -28,8 +28,6 @@ public class Board {
   
   private Integer userId;
 
-  private Integer optionId;
-
   @CreationTimestamp
   private LocalDateTime createdDate;
 
