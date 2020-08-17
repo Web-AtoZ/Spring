@@ -99,8 +99,6 @@ public class RestaurantControllerTest {
                         .description("option_name")
                         .optional(),
                     fieldWithPath("_embedded.restaurants[].phone").description("phone").optional(),
-                    fieldWithPath("_embedded.restaurants[].mapx").description("mapx").optional(),
-                    fieldWithPath("_embedded.restaurants[].mapy").description("mapy").optional(),
                     fieldWithPath("page.size").description("elements size per page"),
                     fieldWithPath("page.total_elements")
                         .description("total element count of results"),

@@ -3,6 +3,7 @@ package com.webatoz.backend.interfaces.board;
 import com.webatoz.backend.database.webatoz.board.Board;
 import com.webatoz.backend.domain.board.BoardSearchDomain;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
+import com.webatoz.backend.domain.board.UpdateBoardDomain;
 import com.webatoz.backend.domain.response.BoardModel;
 import com.webatoz.backend.domain.response.ResponseModel;
 import com.webatoz.backend.interfaces.common.BaseController;
@@ -83,6 +84,43 @@ public class BoardController extends BaseController {
 
         ResponseModel responseResource =
                 successResponseModel("board", new BoardModel(result), selfLink, profileLink);
+
+        return new ResponseEntity(responseResource, HttpStatus.OK);
+    }
+
+    // 수정
+    @PutMapping("/{no}")
+    public ResponseEntity updateBoard(@PathVariable("no") Integer boardNo, @Valid @RequestBody UpdateBoardDomain updateBoardDomain) {
+
+        Board updateResult = boardService.updateBoard(boardNo, updateBoardDomain);
+
+        Link selfLink =
+                linkTo(methodOn(BoardController.class).updateBoard(boardNo, updateBoardDomain)).withSelfRel();
+        Link profileLink =
+                linkTo(BoardController.class)
+                        .slash("/docs/index.html#resources-update-board")
+                        .withRel("profile");
+
+        ResponseModel responseResource =
+                successResponseModel("board", new BoardModel(updateResult), selfLink, profileLink);
+
+        return new ResponseEntity(responseResource, HttpStatus.OK);
+    }
+
+    // 삭제
+    @DeleteMapping("/{no}")
+    public ResponseEntity deleteBoards(@PathVariable("no") Integer boardNo) {
+        Board deleteResult = boardService.deleteBoard(boardNo);
+
+        Link selfLink =
+                linkTo(methodOn(BoardController.class).deleteBoards(boardNo)).withSelfRel();
+        Link profileLink =
+                linkTo(BoardController.class)
+                        .slash("/docs/index.html#resources-delete-board")
+                        .withRel("profile");
+
+        ResponseModel responseResource =
+                successResponseModel("board", new BoardModel(deleteResult), selfLink, profileLink);
 
         return new ResponseEntity(responseResource, HttpStatus.OK);
     }

@@ -1,20 +1,18 @@
 package com.webatoz.backend.database.webatoz.board;
 
 import com.webatoz.backend.database.webatoz.category.Category;
-import com.webatoz.backend.database.webatoz.option.Option;
-import com.webatoz.backend.database.webatoz.user.Users;
+import com.webatoz.backend.database.webatoz.restaurant.Restaurant;
+import com.webatoz.backend.database.webatoz.users.Users;
 import com.webatoz.backend.domain.board.CreateBoardDomain;
+import com.webatoz.backend.domain.board.UpdateBoardDomain;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.hibernate.annotations.Where;
 
 
 @Entity
@@ -43,7 +41,7 @@ public class Board {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurantId")
-    private Restaurant category;
+    private Restaurant restaurant;
 
     @CreationTimestamp
     private LocalDateTime createdDate;
@@ -58,11 +56,31 @@ public class Board {
      * 게시글 등록
      * @param createBoardDomain
      */
-    public void setCreateData(CreateBoardDomain createBoardDomain, Users user, Category category) {
+    public void setCreateData(CreateBoardDomain createBoardDomain, Users user, Category category, Restaurant restaurant) {
         this.title = createBoardDomain.getTitle();
         this.content = createBoardDomain.getContent();
         this.user = user;
-        this.category = category;
+        if (category != null) this.category = category;
+        if (restaurant != null) this.restaurant = restaurant;
         this.createdDate = LocalDateTime.now();
+    }
+
+    /**
+     * 게시글 수정
+     * @param updateBoardDomain
+     */
+    public void setUpdateData(UpdateBoardDomain updateBoardDomain, Category category, Restaurant restaurant) {
+        if (updateBoardDomain.getTitle() != null) this.title = updateBoardDomain.getTitle();
+        if (updateBoardDomain.getContent() != null) this.content = updateBoardDomain.getContent();
+        if (category != null) this.category = category;
+        if (restaurant != null) this.restaurant = restaurant;
+        this.updatedDate = LocalDateTime.now();
+    }
+
+    /**
+     * 게시글 삭제
+     */
+    public void setDelteData() {
+        this.deletedDate = LocalDateTime.now();
     }
 }

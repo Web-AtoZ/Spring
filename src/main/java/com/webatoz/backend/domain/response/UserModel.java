@@ -2,8 +2,7 @@ package com.webatoz.backend.domain.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.webatoz.backend.database.webatoz.category.Category;
-import com.webatoz.backend.database.webatoz.user.Users;
+import com.webatoz.backend.database.webatoz.users.Users;
 import lombok.Getter;
 import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.server.core.Relation;
@@ -14,7 +13,7 @@ import java.time.LocalDateTime;
 @Relation(collectionRelation = "user")
 public class UserModel extends RepresentationModel<UserModel> {
 
-  @JsonProperty(value = "userId")
+  @JsonProperty(value = "id")
   private final Integer userId;
   private final String account;
   private final String name;
