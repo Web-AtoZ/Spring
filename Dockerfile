@@ -18,3 +18,6 @@ ADD ${JAR_FILE} springboot-webatoz.jar
 
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springboot-webatoz.jar"]
+
+
+# test 
