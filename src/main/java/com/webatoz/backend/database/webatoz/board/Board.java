@@ -41,6 +41,10 @@ public class Board {
     @JoinColumn(name = "categoryId")
     private Category category;
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurantId")
+    private Restaurant category;
+
     @CreationTimestamp
     private LocalDateTime createdDate;
 

@@ -175,3 +175,63 @@
 [23:17:06.375] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
 [23:17:06.376] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: []], metadata: Metadata { number: 1, total pages: 1, total elements (truncated)...]
 [23:17:06.377] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:17:37.885] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[23:17:37.885] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 1625 ms
+[23:17:42.135] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[23:17:42.182] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[23:17:42.198] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[23:17:42.213] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[23:17:42.963] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[23:17:42.963] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[23:17:42.963] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[23:17:42.963] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 0 ms
+[23:17:50.188] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=2", parameters={masked}
+[23:17:50.194] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:17:50.378] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:17:50.379] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: []], metadata: Metadata { number: 1, total pages: 1, total elements (truncated)...]
+[23:17:50.415] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:11.083] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount", parameters={masked}
+[23:18:11.083] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:11.125] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:11.125] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:18:11.129] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:18.156] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=", parameters={masked}
+[23:18:18.156] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:18.215] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:18.215] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:18:18.220] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:19.643] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=%EB%93%B1%EB%A1%9D", parameters={masked}
+[23:18:19.643] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:19.681] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:19.682] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: []], metadata: Metadata { number: 1, total pages: 1, total elements (truncated)...]
+[23:18:19.684] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:24.621] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=", parameters={masked}
+[23:18:24.621] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:24.666] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:24.667] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:18:24.672] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:29.349] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=", parameters={masked}
+[23:18:29.349] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:29.395] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:29.396] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:18:29.398] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:34.985] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=", parameters={masked}
+[23:18:34.986] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:35.035] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:35.036] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: [], links: [], links: [], links: [], links: [], links: [ (truncated)...]
+[23:18:35.038] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:36.592] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=%EB%A1%A4", parameters={masked}
+[23:18:36.593] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:36.635] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:36.636] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: []], metadata: Metadata { number: 1, total pages: 1, tot (truncated)...]
+[23:18:36.639] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:38.762] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=testaccount&title=%EB%A1%A4", parameters={masked}
+[23:18:38.762] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:38.797] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:38.797] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [links: [], links: []], metadata: Metadata { number: 1, total pages: 1, tot (truncated)...]
+[23:18:38.800] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[23:18:44.543] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/boards?userAccount=2&title=%EB%A1%A4", parameters={masked}
+[23:18:44.545] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.board.BoardController#getBoards(BoardSearchDomain, Pageable, PagedResourcesAssembler)
+[23:18:44.585] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[23:18:44.585] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [PagedResource { content: [], metadata: Metadata { number: 1, total pages: 0, total elements: 0, size (truncated)...]
+[23:18:44.587] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
