@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Relation(collectionRelation = "option")
 public class CategoryModel extends RepresentationModel<CategoryModel> {
 
-  @JsonProperty(value = "categoryId")
+  @JsonProperty(value = "id")
   private final Integer categoryId;
   private final String name;
   private final String description;

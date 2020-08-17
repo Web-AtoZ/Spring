@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Relation(collectionRelation = "user")
 public class UserModel extends RepresentationModel<UserModel> {
 
-  @JsonProperty(value = "userId")
+  @JsonProperty(value = "id")
   private final Integer userId;
   private final String account;
   private final String name;

@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Relation(collectionRelation = "board")
 public class BoardModel extends RepresentationModel<BoardModel> {
 
-  @JsonProperty(value = "boardId")
+  @JsonProperty(value = "id")
   private final Integer boardId;
   private final String title;
   private final String content;
@@ -22,6 +22,7 @@ public class BoardModel extends RepresentationModel<BoardModel> {
 
   private final UserModel user;
   private final CategoryModel category;
+  private final RestaurantModel restaurant;
 
   @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
   private final LocalDateTime createdDate;
@@ -42,5 +43,6 @@ public class BoardModel extends RepresentationModel<BoardModel> {
     this.deletedDate = board.getDeletedDate();
     this.user = new UserModel(board.getUser());
     this.category = board.getCategory() != null ? new CategoryModel(board.getCategory()) : null;
+    this.restaurant = board.getRestaurant() != null ? new RestaurantModel(board.getRestaurant()) : null;
   }
 }

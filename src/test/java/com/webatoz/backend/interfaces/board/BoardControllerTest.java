@@ -40,6 +40,7 @@ public class BoardControllerTest {
   public void getBoard() throws Exception {
     mockMvc.perform(
         get("/boards")
+            .param("size", "1")
             .contentType(MediaType.APPLICATION_JSON_UTF8)
             .accept(MediaTypes.HAL_JSON)
     )
@@ -65,20 +66,44 @@ public class BoardControllerTest {
             ),
             relaxedResponseFields(
                 fieldWithPath("_embedded.board").description("list of board"),
-                fieldWithPath("_embedded.board[].boardId").description("id").optional(),
+                fieldWithPath("_embedded.board[].id").description("id").optional(),
                 fieldWithPath("_embedded.board[].title").description("title").optional(),
                 fieldWithPath("_embedded.board[].content").description("content").optional(),
                 fieldWithPath("_embedded.board[].views").description("views").optional(),
 
-                fieldWithPath("_embedded.board[].option").description("option").optional(),
-                fieldWithPath("_embedded.board[].option.optionId").description("option id").optional(),
-                fieldWithPath("_embedded.board[].option.level").description("option level").optional(),
-                fieldWithPath("_embedded.board[].option.order").description("option order").optional(),
-                fieldWithPath("_embedded.board[].option.description").description("option description").optional(),
-                fieldWithPath("_embedded.board[].option.poption_id").description("option poption_id").optional(),
-                fieldWithPath("_embedded.board[].option.created_date").description("option created_date").optional(),
-                fieldWithPath("_embedded.board[].option.updated_date").description("option updated_date").optional(),
-                fieldWithPath("_embedded.board[].option.deleted_date").description("option deleted_date").optional(),
+                fieldWithPath("_embedded.board[].user").description("user").optional(),
+                fieldWithPath("_embedded.board[].user.id").description("id").optional(),
+                fieldWithPath("_embedded.board[].user.account").description("account").optional(),
+                fieldWithPath("_embedded.board[].user.name").description("name").optional(),
+                fieldWithPath("_embedded.board[].user.email").description("email").optional(),
+                fieldWithPath("_embedded.board[].user.sns_type").description("sns type").optional(),
+                fieldWithPath("_embedded.board[].user.sns_profile").description("sns profile").optional(),
+                fieldWithPath("_embedded.board[].user.created_date").description("created date").optional(),
+                fieldWithPath("_embedded.board[].user.updated_date").description("updated date").optional(),
+                fieldWithPath("_embedded.board[].user.deleted_date").description("deleted date").optional(),
+
+                fieldWithPath("_embedded.board[].category").description("category").optional(),
+                fieldWithPath("_embedded.board[].category.id").description("id").optional(),
+                fieldWithPath("_embedded.board[].category.name").description("name").optional(),
+                fieldWithPath("_embedded.board[].category.description").description("description").optional(),
+                fieldWithPath("_embedded.board[].category.pcategory_id").description("pcategory id").optional(),
+                fieldWithPath("_embedded.board[].category.created_date").description("created date").optional(),
+                fieldWithPath("_embedded.board[].category.updated_date").description("updated date").optional(),
+                fieldWithPath("_embedded.board[].category.deleted_date").description("deleted date").optional(),
+
+                fieldWithPath("_embedded.board[].restaurant").description("category").optional(),
+                fieldWithPath("_embedded.board[].restaurant.id").description("id").optional(),
+                fieldWithPath("_embedded.board[].restaurant.name").description("name").optional(),
+                fieldWithPath("_embedded.board[].restaurant.lng").description("lng").optional(),
+                fieldWithPath("_embedded.board[].restaurant.lat").description("lat").optional(),
+                fieldWithPath("_embedded.board[].restaurant.option_id").description("option_id").optional(),
+                fieldWithPath("_embedded.board[].restaurant.road_address").description("road_address").optional(),
+                fieldWithPath("_embedded.board[].restaurant.option_name").description("option_name").optional(),
+                fieldWithPath("_embedded.board[].restaurant.phone").description("phone").optional(),
+                fieldWithPath("_embedded.board[].restaurant.place_id").description("place_id").optional(),
+                fieldWithPath("_embedded.board[].restaurant.created_date").description("created date").optional(),
+                fieldWithPath("_embedded.board[].restaurant.updated_date").description("updated date").optional(),
+                fieldWithPath("_embedded.board[].restaurant.deleted_date").description("deleted date").optional(),
 
 
                 fieldWithPath("_embedded.board[].created_date").description("created_date")

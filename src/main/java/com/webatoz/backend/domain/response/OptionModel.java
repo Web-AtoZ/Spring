@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Relation(collectionRelation = "option")
 public class OptionModel extends RepresentationModel<OptionModel> {
 
-  @JsonProperty(value = "optionId")
+  @JsonProperty(value = "id")
   private final Integer optionId;
   private final Integer level;
   private final Integer order;
