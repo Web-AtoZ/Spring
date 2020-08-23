@@ -35,6 +35,20 @@ public class RestaurantRepositoryImpl implements RestaurantRepositoryCustom{
     return new PageImpl<>(result.getResults(), pageable, result.getTotal());
   }
 
+  @Override
+  public Page<Restaurant> findRestaurantsByNameLike(String restaurantName, Pageable pageable) {
+    System.out.println(restaurantName);
+    QRestaurant qRestaurant = new QRestaurant("restaurant");
+    QueryResults<Restaurant> result = jpaQuery.selectFrom(qRestaurant)
+            .where(containsString(qRestaurant.name, restaurantName))
+            .offset(pageable.getOffset())
+            .limit(pageable.getPageSize())
+            .fetchResults();
+
+    return new PageImpl<>(result.getResults(), pageable, result.getTotal());
+  }
+
+
   private BooleanExpression eqString(StringPath path, String value) {
     // 공백 제거 후 null 또는 "" 확인
     if (StringUtils.isEmpty(value)) {

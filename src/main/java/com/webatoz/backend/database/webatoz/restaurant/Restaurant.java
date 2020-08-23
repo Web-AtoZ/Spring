@@ -27,8 +27,6 @@ public class Restaurant {
     private String roadAddress;
     private String optionName;
     private String phone;
-    private String mapx;
-    private String mapy;
     private String placeId;
 
     public Restaurant(String name, String optionName) {

@@ -27,8 +27,6 @@ public class RestaurantDomain extends RepresentationModel<RestaurantDomain> {
   private String roadAddress;
   private String optionName;
   private String phone;
-  private String mapx;
-  private String mapy;
 
   public RestaurantDomain(String name, String optionName) {
     this.name = name;
@@ -47,7 +45,5 @@ public class RestaurantDomain extends RepresentationModel<RestaurantDomain> {
     this.optionId = restaurant.getOptionId();
     this.roadAddress = restaurant.getRoadAddress();
     this.phone = restaurant.getPhone();
-    this.mapx = restaurant.getMapx();
-    this.mapy = restaurant.getMapy();
   }
 }

@@ -19,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -29,28 +30,45 @@ public class RestaurantController extends BaseController {
 
   private final RestaurantService restaurantService;
 
-  // 식당 리스트 모두 가져오기
+//  // 식당 리스트 모두 가져오기
+//  @GetMapping
+//  public ResponseEntity<ResponseModel> getRestaurants(
+//      RestaurantDomain restaurant,
+//      @PageableDefault(size = 10) Pageable pageable,
+//      PagedResourcesAssembler<Restaurant> assembler) {
+//
+//    Restaurant restaurant1 = new Restaurant(restaurant.getName(), restaurant.getOptionName());
+//
+//    Page<Restaurant> restaurants =
+//        restaurantService.getRestaurants(restaurant1, pageable);
+//    PagedModel<RestaurantDomain> pagedModel = assembler.toModel(restaurants, RestaurantDomain::new);
+//
+//    pagedModel.add(
+//        linkTo(methodOn(RestaurantController.class).getRestaurants(restaurant, pageable, assembler))
+//            .withSelfRel(),
+//        linkTo(RestaurantController.class)
+//            .slash("/docs/index.html#resources-get-restaurants")
+//            .withRel("profile"));
+//
+//    ResponseModel responseResource = successResponseModel("restaurants", pagedModel);
+//
+//    return new ResponseEntity<>(responseResource, HttpStatus.OK);
+//  }
+
   @GetMapping
   public ResponseEntity<ResponseModel> getRestaurants(
-      RestaurantDomain restaurant,
-      @PageableDefault(size = 10) Pageable pageable,
-      PagedResourcesAssembler<Restaurant> assembler) {
-
-    Restaurant restaurant1 = new Restaurant(restaurant.getName(), restaurant.getOptionName());
-
+          @RequestParam(value = "name") String restaurantName,
+          @PageableDefault(size = 10) Pageable pageable,
+          PagedResourcesAssembler<Restaurant> assembler
+  ) {
     Page<Restaurant> restaurants =
-        restaurantService.getRestaurants(restaurant1, pageable);
+            restaurantService.getRestaurantsByNameLike(restaurantName, pageable);
     PagedModel<RestaurantDomain> pagedModel = assembler.toModel(restaurants, RestaurantDomain::new);
-
-    pagedModel.add(
-        linkTo(methodOn(RestaurantController.class).getRestaurants(restaurant, pageable, assembler))
-            .withSelfRel(),
-        linkTo(RestaurantController.class)
-            .slash("/docs/index.html#resources-get-restaurants")
-            .withRel("profile"));
 
     ResponseModel responseResource = successResponseModel("restaurants", pagedModel);
 
     return new ResponseEntity<>(responseResource, HttpStatus.OK);
+
   }
+
 }

@@ -31,7 +31,7 @@ public class CollectMenuService {
 
     private final RestaurantService restaurantService;
 
-    @PostConstruct
+//    @PostConstruct
 //    @Scheduled(cron = "10 * * * * *") // 임시로 매분 10초로 지정
     public void collectRestaurantMenu() {
         // 식당 url목록 가져오기

@@ -1,86 +1,255 @@
-[00:01:13.101] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:01:13.104] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2260 ms
-[00:01:56.286] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:01:56.287] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2157 ms
-[00:08:06.444] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:08:06.444] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2144 ms
-[00:08:11.399] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:08:11.441] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:08:11.471] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:08:11.480] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:08:12.082] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:08:12.082] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:08:12.090] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:08:12.090] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
-[00:10:56.485] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:10:56.486] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2174 ms
-[00:11:01.275] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:11:01.322] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:11:01.354] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:11:01.363] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:11:02.124] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:11:02.124] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:11:02.133] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:11:02.134] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
-[00:11:51.977] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:11:51.978] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2208 ms
-[00:11:56.598] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:11:56.642] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:11:56.672] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:11:56.682] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:11:57.607] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:11:57.608] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:11:57.616] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:11:57.616] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
-[00:12:53.681] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:12:53.681] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2150 ms
-[00:12:58.311] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:12:58.354] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:12:58.385] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:12:58.395] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:12:59.642] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:12:59.643] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:12:59.651] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:12:59.651] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
-[00:13:25.130] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:13:25.130] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2113 ms
-[00:13:52.196] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:13:52.240] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:13:52.271] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:13:52.281] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:13:53.169] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:13:53.170] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:13:53.178] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:13:53.178] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
-[00:14:43.598] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:14:43.598] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2512 ms
-[00:16:09.652] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:16:09.652] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2118 ms
-[00:16:29.795] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:16:29.840] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:16:29.869] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:16:29.879] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:16:30.857] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:16:30.858] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:16:30.867] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:16:30.867] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
-[00:22:28.254] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:22:28.254] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2156 ms
-[00:22:32.442] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:22:32.485] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:22:32.515] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:22:32.525] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:22:33.247] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:22:33.248] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:22:33.255] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:22:33.255] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 7 ms
-[00:24:35.877] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-[00:24:35.877] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2150 ms
-[00:24:56.233] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[00:24:56.278] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
-[00:24:56.309] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-[00:24:56.320] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[00:24:57.370] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
-[00:24:57.371] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
-[00:24:57.379] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[00:24:57.379] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[18:07:33.375] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:07:33.378] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2555 ms
+[18:10:30.209] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:10:30.209] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2407 ms
+[18:10:35.045] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:10:35.089] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:10:35.123] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:10:35.133] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:10:36.540] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[18:10:36.541] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[18:10:36.549] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[18:10:36.549] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[18:52:16.711] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:52:16.711] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2578 ms
+[18:52:21.803] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:52:21.857] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 17 mappings in 'requestMappingHandlerMapping'
+[18:52:21.892] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:52:21.902] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:52:22.933] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[18:52:22.934] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[18:52:22.944] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[18:52:22.944] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 10 ms
+[18:58:43.442] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[18:58:43.448] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[18:58:43.604] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[18:58:43.616] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[18:58:43.617] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@86097f6]
+[18:58:43.632] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[18:58:43.633] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[18:59:23.425] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[18:59:23.426] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[18:59:23.445] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[18:59:23.446] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[18:59:23.446] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@56fed701]
+[18:59:23.447] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[18:59:23.447] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:20:52.847] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:20:52.847] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2361 ms
+[19:20:57.872] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:20:57.923] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 17 mappings in 'requestMappingHandlerMapping'
+[19:20:57.959] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:20:57.970] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:20:59.223] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:20:59.224] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:20:59.233] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:20:59.233] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[19:21:01.236] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:21:01.242] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[19:21:01.403] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:21:01.416] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:21:01.417] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@5d482de8]
+[19:21:01.436] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[19:21:01.437] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:21:27.263] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:21:27.264] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[19:21:27.301] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:21:27.303] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:21:27.303] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@584adb3d]
+[19:21:27.305] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[19:21:27.306] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:21:32.475] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:21:32.476] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[19:21:32.493] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:21:32.493] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:21:32.493] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@7417cc07]
+[19:21:32.494] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[19:21:32.494] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:21:45.738] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:21:45.738] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2819 ms
+[19:21:51.084] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:21:51.136] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 17 mappings in 'requestMappingHandlerMapping'
+[19:21:51.170] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:21:51.182] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:21:52.484] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:21:52.485] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:21:52.495] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:21:52.495] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 11 ms
+[19:21:56.488] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:21:56.495] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(RestaurantDomain, Pageable, PagedResourcesAssembler)
+[19:57:01.313] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:57:01.313] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2453 ms
+[19:57:06.116] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:57:06.161] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[19:57:06.194] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:57:06.204] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:57:07.412] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:57:07.412] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:57:07.423] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:57:07.423] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 11 ms
+[19:57:09.667] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:57:09.673] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[19:57:09.680] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+[19:57:09.680] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+[19:57:09.688] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[19:57:09.689] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[19:57:09.708] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:57:09.708] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Sun Aug 23 19:57:09 KST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[19:57:09.723] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
+[19:57:34.263] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:57:34.264] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[19:57:34.268] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+[19:57:34.269] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+[19:57:34.269] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:57:34.270] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[19:57:34.271] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:57:34.271] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Sun Aug 23 19:57:34 KST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[19:57:34.274] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
+[19:57:39.215] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?args=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:57:39.218] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+[19:57:39.221] [DEBUG] | o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+[19:57:39.221] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+[19:57:39.221] [DEBUG] | o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error?args=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:57:39.222] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[19:57:39.222] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:57:39.222] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Sun Aug 23 19:57:39 KST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+[19:57:39.224] [DEBUG] | o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
+[19:57:48.387] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants/args?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:57:48.387] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[19:58:00.673] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[19:58:00.680] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[19:58:00.680] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@3a9bc08b]
+[19:58:00.682] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[19:58:00.683] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[19:59:32.156] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[19:59:32.157] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2635 ms
+[19:59:37.322] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[19:59:37.368] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[19:59:37.403] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[19:59:37.413] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[19:59:38.613] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[19:59:38.613] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[19:59:38.624] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[19:59:38.624] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 11 ms
+[19:59:54.578] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[19:59:54.586] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:01:14.599] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:01:14.600] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2254 ms
+[20:01:19.444] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:01:19.486] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:01:19.517] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:01:19.527] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:01:20.575] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:01:20.576] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:01:20.585] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:01:20.585] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[20:01:32.371] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:01:32.377] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:01:32.514] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:01:32.526] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:01:32.526] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@196d3b0a]
+[20:01:32.553] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:01:32.553] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:02:25.397] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:02:25.398] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2251 ms
+[20:02:29.944] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:02:29.990] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:02:30.022] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:02:30.032] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:02:31.273] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:02:31.274] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:02:31.282] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:02:31.282] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[20:02:34.580] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:02:34.586] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:02:34.720] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:02:34.731] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:02:34.732] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@22b5fcd6]
+[20:02:34.762] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:02:34.762] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:02:53.519] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:02:53.519] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2423 ms
+[20:02:58.375] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:02:58.429] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:02:58.463] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:02:58.474] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:02:59.752] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:02:59.753] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:02:59.762] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:02:59.762] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[20:10:43.994] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:10:44.000] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:11:23.608] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:11:23.621] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:11:23.621] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@342691fb]
+[20:11:23.636] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:11:23.637] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:12:13.235] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:12:13.235] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2380 ms
+[20:12:17.899] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:12:17.946] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:12:17.977] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:12:17.986] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:12:18.746] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:12:18.746] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:12:18.755] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:12:18.755] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[20:12:41.850] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:12:41.855] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:12:41.993] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:12:42.004] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:12:42.004] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@2e599049]
+[20:12:42.016] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:12:42.017] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:16:59.589] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:16:59.589] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2478 ms
+[20:17:04.153] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:17:04.197] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:17:04.226] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:17:04.236] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:17:05.402] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:17:05.403] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:17:05.411] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:17:05.411] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[20:17:18.939] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:17:18.944] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:17:19.093] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:17:19.103] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:17:19.104] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@3fe4fe13]
+[20:17:19.135] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:17:19.136] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:17:32.265] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:17:32.266] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:17:32.281] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:17:32.282] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:17:32.282] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@5568ca6]
+[20:17:32.283] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+[20:17:32.283] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:18:17.524] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[20:18:17.525] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2314 ms
+[20:18:21.997] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[20:18:22.039] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[20:18:22.069] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[20:18:22.079] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[20:18:23.057] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[20:18:23.058] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[20:18:23.066] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[20:18:23.066] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 8 ms
+[20:18:36.548] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:18:36.553] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:18:36.697] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[20:18:36.698] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[20:18:36.744] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[20:21:38.894] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?s=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:21:38.894] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:21:38.896] [DEBUG] | o.s.w.s.m.m.a.ServletInvocableHandlerMethod | Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.webatoz.backend.domain.response.ResponseModel> com.webatoz.backend.interfaces.restaurant.RestaurantController.getRestaurants(java.lang.String,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler<com.webatoz.backend.database.webatoz.restaurant.Restaurant>): Required String parameter 'name' is not present
+[20:21:38.897] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Using @ExceptionHandler com.webatoz.backend.global.error.GlobalExceptionHandler#handleException(Exception)
+[20:21:38.903] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[20:21:38.903] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [com.webatoz.backend.global.error.ErrorResponse@5caca6f0]
+[20:21:38.904] [WARN ] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present]
+[20:21:38.905] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 500 INTERNAL_SERVER_ERROR
+[20:21:43.986] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC", parameters={masked}
+[20:21:43.987] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[20:21:44.006] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[20:21:44.006] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[20:21:44.009] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
