@@ -8,4 +8,6 @@ public interface RestaurantRepositoryCustom {
   Page<Restaurant> findRestaurant();
 
   Page<Restaurant> findRestaurant(Restaurant restaurant, Pageable pageable);
+
+  Page<Restaurant> findRestaurantsByNameLike(String restaurantName, Pageable pageable);
 }
