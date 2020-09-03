@@ -37,7 +37,6 @@ public class RestaurantRepositoryImpl implements RestaurantRepositoryCustom{
 
   @Override
   public Page<Restaurant> findRestaurantsByNameLike(String restaurantName, Pageable pageable) {
-    System.out.println(restaurantName);
     QRestaurant qRestaurant = new QRestaurant("restaurant");
     QueryResults<Restaurant> result = jpaQuery.selectFrom(qRestaurant)
             .where(containsString(qRestaurant.name, restaurantName))
