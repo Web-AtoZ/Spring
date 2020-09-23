@@ -26,4 +26,11 @@ public class RestaurantService {
 
     return restaurantRepository.findRestaurant(restaurant, pageable);
   }
+
+
+  public Page<Restaurant> getRestaurantsByNameLike(String restaurantName, Pageable pageable) {
+
+    return restaurantRepository.findRestaurantsByNameLike(restaurantName, pageable);
+  }
+
 }

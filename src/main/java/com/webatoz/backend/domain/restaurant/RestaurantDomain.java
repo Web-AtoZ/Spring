@@ -1,35 +1,37 @@
 package com.webatoz.backend.domain.restaurant;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.webatoz.backend.database.webatoz.board.Board;
 import com.webatoz.backend.database.webatoz.restaurant.Restaurant;
 import lombok.Data;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.hateoas.RepresentationModel;
-import org.springframework.hateoas.server.core.Relation;
 
-import java.time.LocalDateTime;
+import javax.persistence.Id;
+import java.time.LocalDate;
 
-@Getter
-@Relation(collectionRelation = "restaurant")
+@Data
+@RequiredArgsConstructor
 public class RestaurantDomain extends RepresentationModel<RestaurantDomain> {
   private Integer restaurantId;
   private String name;
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime createdDate;
-
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime updatedDate;
-
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime deletedDate;
+  private LocalDate createdDate;
+  private LocalDate updatedDate;
+  private LocalDate deletedDate;
   private String address;
   private Double lng;
   private Double lat;
   private Integer optionId;
+  private Integer boardId;
   private String roadAddress;
   private String optionName;
   private String phone;
+
+  public RestaurantDomain(String name, String optionName) {
+    this.name = name;
+    this.optionName = optionName;
+  }
 
   public RestaurantDomain(Restaurant restaurant) {
     this.restaurantId = restaurant.getRestaurantId();
