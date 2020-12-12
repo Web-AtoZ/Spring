@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -19,6 +20,11 @@ public class CreateBoardDomain {
   @NotBlank(message = "content must not be blank.")
   private String content;
 
+  @NotNull(message = "userId must not be null.")
   private Integer userId;
+
+  private Integer categoryId;
+
+  private Integer restaurantId;
 
 }

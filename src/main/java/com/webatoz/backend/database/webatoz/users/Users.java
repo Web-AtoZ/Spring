@@ -1,7 +1,9 @@
-package com.webatoz.backend.database.webatoz.board;
+package com.webatoz.backend.database.webatoz.users;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,13 +14,13 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @EqualsAndHashCode
-public class User {
+public class Users {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer userId;
 
-  private String id;
+  private String account;
 
   private String name;
 
@@ -26,11 +28,17 @@ public class User {
 
   private String secret;
 
+  @CreationTimestamp
   private LocalDateTime createdDate;
 
+  @UpdateTimestamp
   private LocalDateTime updatedDate;
 
   private LocalDateTime deletedDate;
+
+  private String snsType;
+
+  private String snsProfile;
 
 //  @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
 //  private Set<Board> boards = new HashSet<>();

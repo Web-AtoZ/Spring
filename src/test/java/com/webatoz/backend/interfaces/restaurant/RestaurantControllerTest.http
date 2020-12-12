@@ -1,0 +1,4 @@
+GET http://localhost:8081/restaurants?name=aa&optionName=asd
+Accept: application/json
+
+###

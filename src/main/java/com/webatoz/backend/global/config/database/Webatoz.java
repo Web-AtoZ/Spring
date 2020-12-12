@@ -1,5 +1,6 @@
 package com.webatoz.backend.global.config.database;
 
+import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -15,6 +16,7 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
@@ -55,14 +57,14 @@ public class Webatoz extends DatabaseConfig{
     /* -----------------JPA 셋팅------------------------------------- */
     @Bean(name = name + "EntityManagerFactory")
     @Primary
-    public EntityManagerFactory entityManagerFactory(@Qualifier(name + "DataSource") DataSource dataSource) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier(name + "DataSource") DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(dataSource);
         factory.setPackagesToScan(packageToScan);
         factory.setPersistenceUnitName(name);
         super.setConfigureEntityManagerFactory(factory);
 
-        return factory.getObject();
+        return factory;
     }
 
 
@@ -73,5 +75,15 @@ public class Webatoz extends DatabaseConfig{
         tm.setEntityManagerFactory(entityManagerFactory);
 
         return tm;
+    }
+
+    /* -----------------Querydsl 셋팅------------------------------------- */
+
+
+    @Bean(name = name + "JPAQueryFactory")
+    @Primary
+    public JPAQueryFactory dbBncAdmJPAQueryFactory(@Qualifier(name + "EntityManagerFactory") EntityManager entityManager) {
+
+        return new JPAQueryFactory(entityManager);
     }
 }

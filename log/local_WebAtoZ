@@ -1,0 +1,185 @@
+[18:27:30.741] [DEBUG] | o.s.web.context.ContextLoader | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[18:27:30.746] [INFO ] | o.s.web.context.ContextLoader | Root WebApplicationContext: initialization completed in 2748 ms
+[18:27:35.099] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[18:27:35.150] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | 16 mappings in 'requestMappingHandlerMapping'
+[18:27:35.183] [DEBUG] | o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[18:27:35.199] [DEBUG] | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[18:27:36.226] [INFO ] | o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+[18:27:36.227] [DEBUG] | o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+[18:27:36.236] [DEBUG] | o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[18:27:36.236] [INFO ] | o.s.web.servlet.DispatcherServlet | Completed initialization in 9 ms
+[18:27:48.348] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=15", parameters={masked}
+[18:27:48.354] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:27:48.668] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:27:48.670] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:27:48.694] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:28:50.943] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[18:28:50.944] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:28:50.957] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:28:50.957] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:28:50.959] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:29:17.163] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=10", parameters={masked}
+[18:29:17.164] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:29:17.190] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:29:17.191] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:29:17.196] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:33:55.404] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=10", parameters={masked}
+[18:33:55.405] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:33:55.422] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:33:55.423] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:33:55.428] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:33:59.676] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10", parameters={masked}
+[18:33:59.677] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:33:59.691] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:33:59.691] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:33:59.692] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:34:44.956] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=10", parameters={masked}
+[18:34:44.957] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:34:44.980] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:34:44.980] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:34:44.981] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:34:58.071] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=10", parameters={masked}
+[18:34:58.072] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:34:58.085] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:34:58.086] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:34:58.087] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:35:18.512] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=10", parameters={masked}
+[18:35:18.512] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:35:18.527] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:35:18.527] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:35:18.529] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:35:21.398] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=10", parameters={masked}
+[18:35:21.399] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:35:21.413] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:35:21.414] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:35:21.415] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:35:25.450] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=10", parameters={masked}
+[18:35:25.451] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:35:25.468] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:35:25.468] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:35:25.470] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:36:39.480] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0&page=10", parameters={masked}
+[18:36:39.480] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:36:39.491] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:36:39.492] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:36:39.493] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:37:38.860] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0&page=10", parameters={masked}
+[18:37:38.861] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:37:38.882] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:37:38.883] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:37:38.884] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:37:52.127] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0&page=10", parameters={masked}
+[18:37:52.128] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:37:52.139] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:37:52.139] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:37:52.141] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:38:43.311] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0&page=10&size=1", parameters={masked}
+[18:38:43.311] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:38:43.324] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:38:43.324] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=1>;rel="first", <http://localhost:8088/restau (truncated)...]
+[18:38:43.325] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:38:49.601] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10&size=1", parameters={masked}
+[18:38:49.601] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:38:49.630] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:38:49.630] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=1>;rel="first", <http://localhost:8088/restau (truncated)...]
+[18:38:49.631] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:38:50.878] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10&size=10", parameters={masked}
+[18:38:50.879] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:38:50.891] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:38:50.891] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:38:50.894] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:38:53.333] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10&size=10", parameters={masked}
+[18:38:53.334] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:38:53.348] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:38:53.348] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:38:53.349] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:38:55.302] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=10&size=1", parameters={masked}
+[18:38:55.302] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:38:55.314] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:38:55.314] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=1>;rel="first", <http://localhost:8088/restau (truncated)...]
+[18:38:55.316] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:39:02.583] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=1", parameters={masked}
+[18:39:02.584] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:39:02.597] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:39:02.598] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=1>;rel="first", <http://localhost:8088/restau (truncated)...]
+[18:39:02.599] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:39:06.028] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=10", parameters={masked}
+[18:39:06.029] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:39:06.046] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:39:06.047] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:39:06.048] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:39:13.171] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=1&size=10", parameters={masked}
+[18:39:13.171] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:39:13.188] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:39:13.188] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:39:13.189] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:39:27.892] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=1&size=10", parameters={masked}
+[18:39:27.892] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:39:27.907] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:39:27.907] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:39:27.908] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:39:52.044] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=10", parameters={masked}
+[18:39:52.045] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:39:52.059] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:39:52.059] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:39:52.061] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:40:33.866] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=10", parameters={masked}
+[18:40:33.867] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:40:33.884] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:40:33.885] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:40:33.886] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:40:53.178] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90&page=1&size=10", parameters={masked}
+[18:40:53.179] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:40:53.195] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:40:53.195] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:40:53.196] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:03.211] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90&page=1&size=10", parameters={masked}
+[18:41:03.211] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:03.225] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:03.225] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:41:03.226] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:07.256] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=1&size=10", parameters={masked}
+[18:41:07.257] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:07.270] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:07.270] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:41:07.271] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:34.151] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=10", parameters={masked}
+[18:41:34.151] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:34.161] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:34.162] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:41:34.163] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:38.676] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=1&size=10", parameters={masked}
+[18:41:38.678] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:38.688] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:38.689] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:41:38.690] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:48.243] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=1&size=10", parameters={masked}
+[18:41:48.246] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:48.267] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:48.267] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:41:48.269] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:41:54.087] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=10", parameters={masked}
+[18:41:54.088] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:41:54.102] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:41:54.102] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:41:54.104] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:43:37.825] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90%EB%9D%BC&page=1&size=10", parameters={masked}
+[18:43:37.825] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:43:37.839] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:43:37.839] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:43:37.841] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:43:41.483] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%ED%83%90&page=1&size=10", parameters={masked}
+[18:43:41.483] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:43:41.495] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:43:41.495] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="self"]]
+[18:43:41.496] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:43:46.274] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=&page=1&size=10", parameters={masked}
+[18:43:46.274] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:43:46.287] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:43:46.287] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:43:46.289] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK
+[18:43:51.956] [DEBUG] | o.s.web.servlet.DispatcherServlet | GET "/restaurants?name=%EC%8B%A0%EB%A6%BC&page=1&size=10", parameters={masked}
+[18:43:51.956] [DEBUG] | o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.webatoz.backend.interfaces.restaurant.RestaurantController#getRestaurants(String, Pageable, PagedResourcesAssembler)
+[18:43:51.977] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/json, application/*+json, application/json, application/*+json]
+[18:43:51.977] [DEBUG] | o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [links: [<http://localhost:8088/restaurants?page=1&size=10>;rel="first", <http://localhost:8088/resta (truncated)...]
+[18:43:51.981] [DEBUG] | o.s.web.servlet.DispatcherServlet | Completed 200 OK

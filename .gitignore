@@ -1,0 +1,8 @@
+/build/
+/.idea/
+/.gradle/
+/log/
+/src/main/generated/
+/Spring.iml
+/out/
+/log/
