@@ -8,6 +8,7 @@ import lombok.Getter;
 import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.server.core.Relation;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -26,14 +27,14 @@ public class RestaurantModel extends RepresentationModel<RestaurantModel> {
   private final String phone;
   private final String placeId;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime createdDate;
+  @JsonFormat(pattern = "yyyy-MM-dd")
+  private final LocalDate createdDate;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime updatedDate;
+  @JsonFormat(pattern = "yyyy-MM-dd")
+  private final LocalDate updatedDate;
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-  private final LocalDateTime deletedDate;
+  @JsonFormat(pattern = "yyyy-MM-dd")
+  private final LocalDate deletedDate;
 
   public RestaurantModel(Restaurant restaurant) {
     this.restaurantId = restaurant.getRestaurantId();

@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 jasypt:
   encryptor:
@@ -19,9 +19,9 @@ spring:
 
   datasource:
     webatoz:
-      jdbc-url: ENC(xG9Wb4NPLuL5SKfJacQMpBn3PQpDg0glKh7J+YtGFBaRtDg1PIoCkJSUCpwRQ+URVMmAom+j2rQ=)
-      username: ENC(4zlm6cwvvV5H6gXRRcJMSQ==)
-      password: ENC(/B8MdkzbCPEI7AIQTXSVBfQz7qJjma8o)
+      jdbc-url: jdbc:postgresql://193.123.252.210:5432/webatoz
+      username: ENC(p9pdcq+49pNHtxhcJb3ZJg==)
+      password: ENC(dKB8/EAmJzvZzQg+xT9HTQ==)
       driver-class-name: org.postgresql.Driver
 
 #Zuul routes. "/boards/*/comments/*" 이 경로로 유입되는 것은 "/comments/*"로 연결한다.]
